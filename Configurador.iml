@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="EscuelaPueblo">
+    <configurations>
+      <configuration name="EscuelaPueblo" pure-as="true" main-class="Main" output-file="EscuelaPueblo.swf" output-folder="$MODULE_DIR$/bin-debug" wrapper-template-path="$MODULE_DIR$/html-template">
+        <dependencies target-player="10.2">
+          <entries>
+            <entry library-id="eb283e75-9a78-489d-b5fb-f1b0cba98674">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="558cf586-5ade-4b79-892b-6dc23bb55410">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.5.1" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.keep-generated-actionscript" value="true" />
+            <entry key="compiler.locale" value="en_US" />
+          </map>
+          <option name="additionalOptions" value="-include-libraries libs/elementosPersonajes.swc" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3">
+      <sourceFolder url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.5.1" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="eb283e75-9a78-489d-b5fb-f1b0cba98674" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/repositorioAS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/repositorioAS3" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="558cf586-5ade-4b79-892b-6dc23bb55410" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="events" level="project" />
+  </component>
+</module>
+

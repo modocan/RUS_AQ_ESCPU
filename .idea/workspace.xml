@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="996f3438-beae-41db-b224-77d6d89b82bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Archivo comprimido.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/Alternativa3D 7.7.0.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/CLASES_MISMA_ALTURA-FLA.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/Cairngorm.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/EscuelaPueblo.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/FlashSocket.IO_0.7.0-Alpha.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/GraphAPI_Web_1_8_1.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/Juego3/src/Juego3.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/ModestMapsSWC.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/MonsterDebugger.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/MonsterDebuggerMobile.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/OSMF.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/RECOVER_elementosPersonajes.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/SwiftSuspenders-v1.6.0.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/alcon.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/amfphp.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/analytics.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/analytics_flash.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/as3crypto.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/as3httpclient.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/assets/mini.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/assets/touch_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/biblioteca.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/collapsed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/detailHeaderRule.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/detailSectionHeader.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/expanded.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/inherit-arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/inheritedSummary.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/titleTableBottom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/titleTableMiddle.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/images/titleTableTop.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/extras/hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/extras/hand_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/extras/ve_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/debugging/alcon.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/elementosPersonajes.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/es/ladespensa/utils/player2.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/greensock.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/html-template/playerProductInstall.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/Alternativa3D 7.7.0.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/CLASES_MISMA_ALTURA-FLA.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/Cairngorm.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/FlashSocket.IO_0.7.0-Alpha.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/GraphAPI_Web_1_8_1.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/Juego3.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/ModestMapsSWC.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/MonsterDebugger.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/MonsterDebuggerMobile.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/OSMF.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/SwiftSuspenders-v1.6.0.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/alcon.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/as3crypto.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/assets/mini.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/assets/touch_marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/collapsed.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/detailHeaderRule.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/detailSectionHeader.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/expanded.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/inherit-arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/inheritedSummary.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/titleTableBottom.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/titleTableMiddle.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/images/titleTableTop.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/extras/hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/extras/hand_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/extras/ve_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/es/ladespensa/utils/player2.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/html-template/playerProductInstall.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/juego3.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/juego3/src/Juego3.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/map_1_20.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/map_flex_1_20.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/robotlegs-framework-v1.5.2.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/spark.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/starling.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/tweetrWEB.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/map_1_20.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/map_flex_1_20.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/robotlegs-framework-v1.5.2.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/spark.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/starling.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/tweetrWEB.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Main.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/biblioteca.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/elementosPersonajes.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RECOVER_elementosPersonajes.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/amfphp.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/biblioteca.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/elementosPersonajes.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/juegos/juego3/src/Juego3.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Configurador.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/imgs/trama.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/._Proyecto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.actionScriptProperties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Configurador.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/Juego3/Juego3.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/assets/mini.fnt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/greensock/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/greensock/easing/easing_readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/greensock/loading/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-A.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-B.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-C.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-E.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-F.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-G.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-H.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-I.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-J.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-K.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-L.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-M.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-N.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-O.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-P.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-Q.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-R.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-S.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-T.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-U.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-V.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-W.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-X.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-Y.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/all-index-Z.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/appendixes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/asdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/class-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/Map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/TweenMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/Coordinate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/MapExtent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/Tile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/TileGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/TweenTile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/core/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/events/MapEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/events/MarkerEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/events/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/events/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/Distance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/GreatCircleOverlay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/HandCursor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/LineStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/MapControls.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/MapCopyright.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/MapScale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/NavigatorWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/Overlay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/VirtualEarthCopyright.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/ZoomBox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/ZoomSlider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/ui/Button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/ui/FullScreenButton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/ui/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/extras/ui/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/flex/MapComponent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/flex/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/flex/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/AbstractProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/IProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/LinearProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/Location.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/MercatorProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/Transformation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/geo/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/ACTransitMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/AbstractMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/AbstractZoomifyMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/BlueMarbleMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/DailyPlanetProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/IMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/OpenStreetMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftAerialMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftHybridMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftRoadMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooAerialMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooHybridMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooOverlayMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooRoadMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/MarkerClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/PolygonClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/PolygonMarker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/Polyline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/PolylineClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/Redrawable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/overlays/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/util/BinaryUtil.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/util/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/com/modestmaps/util/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/gs/TweenFilterLite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/gs/TweenLite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/gs/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/gs/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/index-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/mxml-tags.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/package-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/docs/title-bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/com/modestmaps/extras/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/greensock/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/greensock/easing/easing_readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/greensock/loading/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/gs/easing/easing_readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/html-template/history/history.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/html-template/history/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/html-template/history/historyFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/html-template/index.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/html-template/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/Juego3.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/assets/mini.fnt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/greensock/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/greensock/easing/easing_readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/greensock/loading/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-classes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-A.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-B.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-C.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-E.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-F.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-G.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-H.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-I.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-J.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-K.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-L.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-M.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-N.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-O.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-P.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-Q.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-R.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-S.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-T.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-U.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-V.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-W.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-X.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-Y.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/all-index-Z.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/appendixes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/asdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/class-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/Map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/TweenMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/Coordinate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/MapExtent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/Tile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/TileGrid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/TweenTile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/core/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/events/MapEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/events/MarkerEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/events/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/events/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/Distance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/GreatCircleOverlay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/HandCursor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/LineStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/MapControls.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/MapCopyright.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/MapScale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/NavigatorWindow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/Overlay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/VirtualEarthCopyright.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/ZoomBox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/ZoomSlider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/ui/Button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/ui/FullScreenButton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/ui/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/extras/ui/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/flex/MapComponent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/flex/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/flex/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/AbstractProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/IProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/LinearProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/Location.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/MercatorProjection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/Transformation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/geo/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/ACTransitMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/AbstractMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/AbstractZoomifyMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/BlueMarbleMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/DailyPlanetProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/IMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/OpenStreetMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftAerialMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftHybridMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/MicrosoftRoadMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/microsoft/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooAerialMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooHybridMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooOverlayMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/YahooRoadMapProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/mapproviders/yahoo/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/MarkerClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/PolygonClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/PolygonMarker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/Polyline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/PolylineClip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/Redrawable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/overlays/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/util/BinaryUtil.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/util/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/com/modestmaps/util/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/gs/TweenFilterLite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/gs/TweenLite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/gs/class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/gs/package-detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/index-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/mxml-tags.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/package-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/docs/title-bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/com/modestmaps/extras/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/gs/easing/easing_readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/html-template/history/history.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/html-template/history/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/html-template/history/historyFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/html-template/index.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin-debug/juegos/html-template/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/CreaConfiguradorCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/CreacionCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/ElementoElegidoCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/FBCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/FBIniciadoCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/GuardarAvatarCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/commands/MenuCategoriasCommand.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/context/MainContext.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/events/ConfiguradorEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/events/JuegoEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/events/UsuarioEvent.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/juegos/Juego3.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/juegos/juego3/src/Juego3.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/AmigosListMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/BtnFinMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/BtnVolverMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/InterfazMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/JuegoMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/MainMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/MenuCategoriasMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/MunecoMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/NombreMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/PersonajesMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mediators/SubMenuCategoriasMediator.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/AvatarModel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/DBModel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/IAvatarModel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/IDBModel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/IUsuarioModel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/models/UsuarioModel.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/FBService.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/IFBService.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/IUsuarioService.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/services/UsuarioService.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/AmigoView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/AmigosListView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/BtnFinView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/BtnVolverView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/CategoriaView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/ElementoView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/FooterView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/InterfazView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/JuegoView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/MainView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/MenuCategoriasView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/MunecoView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/NombreView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/PersonajesView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/PruebaView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/SubMenuCategoriasView.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/ChromePhp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/app/Actions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/app/Filters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/app/Gateway.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/io/AMFBaseDeserializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/io/AMFBaseSerializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/io/AMFDeserializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/io/AMFSerializer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/util/AMFObject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/util/DateWrapper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/util/DescribeService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/util/PageAbleResult.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/util/TraceHeader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/amf/util/WrapperClasses.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/json/app/Actions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/json/app/Gateway.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/RecordSetAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/adodbAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/doctrineAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/fbsqlAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/informixAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/mssqlAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/mysqlAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/mysqliAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/mysqliobjectAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/oci8Adapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/odbcAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/pdoAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/peardbAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/pgsqlAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/plainrecordsetAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/sqliteAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/sqliteobjectAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/zendrowAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/adapters/zendrowsetAdapter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/app/BasicActions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/app/BasicGateway.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/app/Constants.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/app/Globals.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/app/php4Executive.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/app/php5Executive.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/exception/MessageException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/exception/php4Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/exception/php5Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/Authenticate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/CharsetHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/CompatPhp4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/CompatPhp5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/Headers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/JSON.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/MessageBody.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/MessageHeader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/MethodTable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/NetDebug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/shared/util/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/xmlrpc/app/Actions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/core/xmlrpc/app/Gateway.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/gateway.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/globals.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/json.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/phpinfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/services/1ContactService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/services/ContactService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/services/amfphp/DiscoveryService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/services/class.inputfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/amfphp/xmlrpc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/swfobject.js" />
+    </list>
+    <ignored path="Aquarius_EscuelaPueblo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Aquarius_EscuelaPueblo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ContactService.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/amfphp/services/ContactService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="530" column="227" selection-start="17280" selection-end="17280" vertical-scroll-proportion="-39.375">
+              <folding>
+                <marker date="1349116712000" expanded="true" signature="21682:21744" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="._Proyecto" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/._Proyecto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".actionScriptProperties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.actionScriptProperties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MunecoMediator.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mediators/MunecoMediator.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="48" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubMenuCategoriasView.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/SubMenuCategoriasView.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="357" column="209" selection-start="13369" selection-end="13369" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubMenuCategoriasMediator.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mediators/SubMenuCategoriasMediator.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="54" selection-start="1506" selection-end="1507" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBModel.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/DBModel.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="213" selection-start="2003" selection-end="2003" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuardarAvatarCommand.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commands/GuardarAvatarCommand.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="222" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AvatarModel.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/AvatarModel.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="46" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/mediators/SubMenuCategoriasMediator.as" />
+        <option value="$PROJECT_DIR$/src/models/UsuarioModel.as" />
+        <option value="$PROJECT_DIR$/src/commands/ElementoElegidoCommand.as" />
+        <option value="$PROJECT_DIR$/src/mediators/BtnFinMediator.as" />
+        <option value="$PROJECT_DIR$/src/context/MainContext.as" />
+        <option value="$PROJECT_DIR$/src/models/IAvatarModel.as" />
+        <option value="$PROJECT_DIR$/src/commands/MenuCategoriasCommand.as" />
+        <option value="$PROJECT_DIR$/src/services/IUsuarioService.as" />
+        <option value="$PROJECT_DIR$/src/models/AvatarModel.as" />
+        <option value="$PROJECT_DIR$/src/mediators/MunecoMediator.as" />
+        <option value="$PROJECT_DIR$/src/views/SubMenuCategoriasView.as" />
+        <option value="$PROJECT_DIR$/src/views/MunecoView.as" />
+        <option value="$USER_HOME$/Desktop/database.php" />
+        <option value="$PROJECT_DIR$/src/commands/GuardarAvatarCommand.as" />
+        <option value="$PROJECT_DIR$/src/services/UsuarioService.as" />
+        <option value="$PROJECT_DIR$/web/amfphp/services/ContactService.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2560" />
+    <option name="height" value="1332" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mediators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juegos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juegos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="context" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="project.structure.side.proportion" value="0.14335664" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="36f10f32-7fb8-4a3d-b36f-8e3e9316aec6">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/clases" />
+      <recent name="$PROJECT_DIR$/src/services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flash App.Configurador">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" class_name="" method_name="" output_log_level="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false">
+          <server_id />
+          <server_name />
+        </option>
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Generated" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Configurador" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="EscuelaPueblo" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Generated" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="Player" />
+          <option name="playerPath" value="/Applications/Adobe Flash Builder 4.5/player/mac/10.2/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="Configurador" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <RunnerSettings RunnerId="FlexDebugRunner" />
+      <RunnerSettings RunnerId="FlexRunner" />
+      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Flash App.Configurador" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" text="cargarElementos" recursive="true" caseInsensitive="true" type="JavaScript" history="1" />
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="996f3438-beae-41db-b224-77d6d89b82bc" name="Default" comment="" />
+      <created>1347614086079</created>
+      <updated>1347614086079</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Inicial 2">
+      <created>1349170414299</created>
+      <updated>1349170414299</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="2560" height="1332" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="FTP" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3996697" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18992569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960192" sideWeight="0.35672998" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960192" sideWeight="0.6374897" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20891824" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicial 2" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Inicial" />
+    <MESSAGE value="Inicial 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Desktop/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="228" selection-start="1697" selection-end="1697" vertical-scroll-proportion="-3.2903225" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="228" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.16129032" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/FBService.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/UsuarioService.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="199" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/MunecoView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="227" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mediators/MunecoMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="48" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SubMenuCategoriasView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="357" column="209" selection-start="13369" selection-end="13369" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mediators/SubMenuCategoriasMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="54" selection-start="1506" selection-end="1507" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/DBModel.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="213" selection-start="2003" selection-end="2003" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/GuardarAvatarCommand.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="222" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/AvatarModel.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="46" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Configurador.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/amfphp/services/ContactService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="530" column="227" selection-start="17280" selection-end="17280" vertical-scroll-proportion="-39.375">
+          <folding>
+            <marker date="1349116712000" expanded="true" signature="21682:21744" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/._Proyecto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.actionScriptProperties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.14335664" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.14335664" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Unnamed</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.14335664" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>4.5.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.14335664" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Configurador</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.14335664" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>4.5.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>docs</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.14335664" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
