@@ -57,17 +57,21 @@ package views
 		
 		public function set nombre(valor:String):void
 		{
-			_nombre = valor.toUpperCase();
-			if(_nombre.length > _max_caract){
-				_nombre = _nombre.substring(0, _max_caract);
-				_nombre = _nombre+'...';
-			}
-			_nombre_mc.texto_txt.text = _nombre;
-			_nombre_mc.texto_txt.autoSize = TextFieldAutoSize.CENTER;
-			_nombre_mc.lateral_izq.x = -_nombre_mc.texto_txt.width/2 - _margen;
-			_nombre_mc.lateral_der.x = _nombre_mc.texto_txt.width/2 + _margen;
-			_nombre_mc.marco_mc.width = _nombre_mc.texto_txt.width + _margen*2;
-			_nombre_mc.fondo_mc.width = _nombre_mc.marco_mc.width+_nombre_mc.lateral_izq.width*2 - _margen*2;
+            if(valor != '' && valor != undefined)
+            {
+                _nombre = valor.toUpperCase();
+                if(_nombre.length > _max_caract){
+                    _nombre = _nombre.substring(0, _max_caract);
+                    _nombre = _nombre+'...';
+                }
+                _nombre_mc.texto_txt.text = _nombre;
+                _nombre_mc.texto_txt.autoSize = TextFieldAutoSize.CENTER;
+                _nombre_mc.lateral_izq.x = -_nombre_mc.texto_txt.width/2 - _margen;
+                _nombre_mc.lateral_der.x = _nombre_mc.texto_txt.width/2 + _margen;
+                _nombre_mc.marco_mc.width = _nombre_mc.texto_txt.width + _margen*2;
+                _nombre_mc.fondo_mc.width = _nombre_mc.marco_mc.width+_nombre_mc.lateral_izq.width*2 - _margen*2;
+            }
+
 		}
 		
 	}

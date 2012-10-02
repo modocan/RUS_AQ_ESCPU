@@ -30,19 +30,26 @@ public class JuegoView extends Sprite {
         super();
         _this = this;
         _this.addEventListener(Event.ADDED_TO_STAGE, init);
+
+        MonsterDebugger.initialize(this);
     }
 
     private function init(e:Event):void
     {
+        MonsterDebugger.trace(this, '[INST]');
+
         _this.removeEventListener(Event.ADDED_TO_STAGE, init);
 
         var cargador:Loader = new Loader();
         cargador.contentLoaderInfo.addEventListener(Event.COMPLETE, cargaOK);
         cargador.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, cargaKO);
-        cargador.load(new URLRequest('juegos/juego3.swf'));
+        cargador.load(new URLRequest('juegos/juego1.swf'));
+        _this.addChild(cargador);
     }
 
     private function cargaKO(e:IOErrorEvent):void {
+
+
 
 
         MonsterDebugger.trace(this, 'ERROR CARGA');
@@ -51,25 +58,7 @@ public class JuegoView extends Sprite {
     }
 
     private function cargaOK(e:Event):void {
-
-        var _clip:MovieClip = MovieClip(e.currentTarget.content);
-        e.currentTarget.content.addEventListener(JuegoEvent.JUEGO_CARGADO, comu);
-        _this.addChild(e.currentTarget.content);
-
-        function comu(e:JuegoEvent):void
-        {
-            var keko:MunecoView = new MunecoView();
-            keko.addEventListener(Event.ADDED_TO_STAGE, initKeko);
-            _clip.addChild(keko);
-
-        }
-
-
-        function initKeko(e:Event):void
-        {
-            e.currentTarget.removeEventListener(Event.ADDED_TO_STAGE, initKeko);
-            MunecoView(e.currentTarget).config('1');
-        }
+        MonsterDebugger.trace(this, '[CARGADO]');
 
     }
 }
