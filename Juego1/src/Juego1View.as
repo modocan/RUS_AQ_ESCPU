@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created with IntelliJ IDEA.
  * User: barbaradominguez
  * Date: 20/09/12
@@ -12,17 +12,20 @@ import com.hexagonstar.util.debug.Debug;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.KeyboardEvent;
+import CronoEvents;
 
 public class Juego1View extends Sprite {
 
             private var muneco:Muneco_mc;
+			
             private var teclaPulsada:Boolean=false;
             private var direccionMuneco:String;
             private var vel:uint=9;
             private var arr_gallinas:Array=new Array();
             private var arr_huevos:Array= new Array();
             private var arr_huevosSuelo:Array=new Array();
-
+			private var huevosRecolectados:uint=0;
+			private var fin:Boolean=false;
 
             private const NUM_GALLINAS:uint=8;
 
@@ -45,9 +48,8 @@ public class Juego1View extends Sprite {
 
                 Debug.trace('Instancio');
                 MonsterDebugger.trace(this, 'Juego1');
-
                 pintarJuego({});
-
+				
                 this.removeEventListener(Event.ADDED_TO_STAGE, init);
                 this.dispatchEvent(new Juego1Event(Juego1Event.JUEGO_CREADO));
                 stage.addEventListener(KeyboardEvent.KEY_DOWN, teclaPresionada);
@@ -72,12 +74,12 @@ public class Juego1View extends Sprite {
 
             private function iniciarJuego():void {
 
-                addEventListener(Event.ENTER_FRAME, track)
+                addEventListener(Event.ENTER_FRAME, track);
 
             }
 
             private function teclaPresionada(e:KeyboardEvent):void {
-
+				if(fin){return;}
                 if(e.keyCode==39){
                     direccionMuneco='d';
                     teclaPulsada=true;
@@ -188,17 +190,22 @@ public class Juego1View extends Sprite {
                     //-------------------------
 
                     // Mira si alguna gallona tiene que tirar un huevo para crear el nuevo huevo:
-
-                    if(Gallina(arr_gallinas[_g]).tirar){
-                        arr_gallinas[_g].tirar=false;
-                        //Debug.trace('vino al for pa tirar el puto huevo');
-                        var huevo:Huevo = new Huevo();
-                        huevo.x = arr_gallinas[_g].x + 60;
-                        huevo.y = arr_gallinas[_g].y + 80;
-                        arr_huevos.push(huevo);
-                        Gallina(arr_gallinas[_g]).gotoAndPlay(1);
-                        addChild(huevo);
-                    }
+					
+					if(Gallina(arr_gallinas[_g]).tirar){
+						arr_gallinas[_g].tirar=false;
+						//Debug.trace('vino al for pa tirar el puto huevo');
+						if(!fin){
+							var huevo:Huevo = new Huevo();
+							huevo.x = arr_gallinas[_g].x + 60;
+							huevo.y = arr_gallinas[_g].y + 80;
+							var rotacion:Number=(Math.random()*(-4))+2;
+							//trace(rotacion);
+							arr_huevos.push(new Array(huevo,rotacion));
+							Gallina(arr_gallinas[_g]).gotoAndPlay(1);
+							addChild(huevo);
+						}
+						
+					}
 
                     // Cambiar animacion de las gallinas:
 
@@ -213,7 +220,7 @@ public class Juego1View extends Sprite {
 
                 // Mover y parar huevos:
 
-                if(timerAnimaciones==30){
+                if(timerAnimaciones==20){
                     //Debug.trace('desde el enter frame llamo a tirar huevos!!!');
                     tirarHuevos();
                     timerAnimaciones=0;
@@ -221,23 +228,27 @@ public class Juego1View extends Sprite {
                 timerAnimaciones++;
 
                 for(var h:uint = 0;h<arr_huevos.length;h++){
-                    if(arr_huevos[h]){ // si el huevo esta cayendo...
-                        arr_huevos[h].y += 8; // incrementa el Y
-                        if(arr_huevos[h].y>=520){  // Si ya llegó al suelo lo saca del array.
-                            arr_huevos[h].chocarYromper();
-                            arr_huevosSuelo.push(new Array(arr_huevos[h],0));
+                    if(arr_huevos[h][0]){ // si el huevo esta cayendo...
+                        arr_huevos[h][0].y += 8; // incrementa el Y
+						arr_huevos[h][0].rotation+=arr_huevos[h][1];
+                        if(arr_huevos[h][0].y>=520){  // Si ya llegó al suelo lo saca del array.
+							arr_huevos[h][0].rotation=0;
+                            arr_huevos[h][0].chocarYromper();
+                            arr_huevosSuelo.push(new Array(arr_huevos[h][0],0));
+							//trace('-- arr_huevos --'+arr_huevos);
                             arr_huevos.splice(h,1);
+							//trace('---------- arr_huevos ---------'+arr_huevos);
                         }
                     }
 
                 //-------------------------
 
                 //Detecta colisión con cesta:
-
+					//trace('---------------  256:  '+arr_huevos[h][0]);
                     if(arr_huevos[h]){
-                        if(muneco.cesta.zonaColision_mc.hitTestObject(arr_huevos[h])){
-                            //Debug.trace('colisionnnnnn!!!!!!!!!!!!!!!!!! :)');
-                            //Debug.trace('---'+arr_huevos[h]);
+                        if(muneco.cesta.zonaColision_mc.hitTestObject(arr_huevos[h][0])){
+                            //trace('colisionnnnnn!!!!!!!!!!!!!!!!!! :)');
+                            //trace('---'+arr_huevos[h][0]);
                             colision(h);
                         }
                     }
@@ -250,8 +261,9 @@ public class Juego1View extends Sprite {
                 //Borra huevos piso:
 
                 for(var hue:int=0; hue<arr_huevosSuelo.length;hue++){
+					if(fin){break;}
                     arr_huevosSuelo[hue][1]++;
-                    if(arr_huevosSuelo[hue][1]==48){
+                    if(arr_huevosSuelo[hue][1]==144){
                         arr_huevosSuelo[hue][0].gotoAndPlay('desaparecer');
                     }
 
@@ -264,11 +276,23 @@ public class Juego1View extends Sprite {
 
             } //------------------------- FIN TRACK!
 
+            //---------------------------------
+
 
             private function colision(hue:uint):void {
-                this.removeChild(arr_huevos[hue]);
+				if(fin){return;}
+                this.removeChild(arr_huevos[hue][0]);
                 //Debug.trace('----------'+arr_huevos[hue]);
                 arr_huevos.splice(hue,1);
+				huevosRecolectados++;
+				this.dispatchEvent(new Juego1Event(Juego1Event.PUNTO));
+				trace('PUNTO!!!  '+huevosRecolectados);
+				if(huevosRecolectados==3){
+					muneco.personaje_mc.cuerpo_mc.contenedorCesta_mc.getChildAt(0).y+=3;
+					muneco.personajeCaminando.cuerpo_mc.contenedorCesta_mc.getChildAt(0).y+=3;
+					huevosRecolectados=0;
+				}
+				
             }
 
             private function tirarHuevos():void {
@@ -282,6 +306,17 @@ public class Juego1View extends Sprite {
                     }
                 }
             }
+			
+			public function finJuego():void{
+                Debug.trace('[FIN JUEGO]');
+				trace('parar track!');
+				//removeEventListener(Event.ENTER_FRAME, track);
+				stage.removeEventListener(KeyboardEvent.KEY_DOWN, teclaPresionada);
+                stage.removeEventListener(KeyboardEvent.KEY_UP, teclaNoPresionada);
+				fin=true;
+				muneco.setAnimMuneco('');
+				teclaPulsada=false;
+			}
 
 
 

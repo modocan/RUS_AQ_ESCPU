@@ -2,40 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996f3438-beae-41db-b224-77d6d89b82bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/personaje.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Juego1/src/juego1.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/personaje.swc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/juego1/juego1.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/elementosPersonajes.swc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Assets.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/Assets.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/MunecoClase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Juego1/Juego1.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Juego1/src/HuevoClase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Juego1/src/Juego1Event.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Juego1/src/Juego1View.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Juego1/src/MiGallina.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/MunecoClase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/juego1/HuevoClase.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/juego1/Juego1View.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/juego1/MiGallina.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/events/Juego1Event.as" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/docs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/src.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/EscuelaPueblo.swf" afterPath="$PROJECT_DIR$/bin-debug/EscuelaPueblo.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/MonsterDebugger.swc" afterPath="$PROJECT_DIR$/bin-debug/MonsterDebugger.swc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/SwiftSuspenders-v1.6.0.swc" afterPath="$PROJECT_DIR$/bin-debug/SwiftSuspenders-v1.6.0.swc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/robotlegs-framework-v1.5.2.swc" afterPath="$PROJECT_DIR$/bin-debug/robotlegs-framework-v1.5.2.swc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/biblioteca.swc" afterPath="$PROJECT_DIR$/libs/biblioteca.swc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/elementosPersonajes.swc" afterPath="$PROJECT_DIR$/libs/elementosPersonajes.swc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/utils.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/utils.swc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/juego2/prueba.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/personaje.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/BarraEvents.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/BarraPuntos.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/Crono.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/src/CronoEvents.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Juego1/src/juego1.fla" afterPath="$PROJECT_DIR$/Juego1/src/juego1.fla" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configurador.iml" afterPath="$PROJECT_DIR$/Configurador.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin-debug/gs/easing/easing_readme.txt" afterPath="$PROJECT_DIR$/bin-debug/gs/easing/easing_readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/commands/CreacionCommand.as" afterPath="$PROJECT_DIR$/src/commands/CreacionCommand.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/JuegoView.as" afterPath="$PROJECT_DIR$/src/views/JuegoView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/MunecoView.as" afterPath="$PROJECT_DIR$/src/views/MunecoView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/NombreView.as" afterPath="$PROJECT_DIR$/src/views/NombreView.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Juego1/src/Juego1Event.as" afterPath="$PROJECT_DIR$/Juego1/src/Juego1Event.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Juego1/src/Juego1View.as" afterPath="$PROJECT_DIR$/Juego1/src/Juego1View.as" />
     </list>
     <ignored path="Aquarius_EscuelaPueblo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,33 +71,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreacionCommand.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/commands/CreacionCommand.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="60" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainView.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/MainView.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NombreView.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/NombreView.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="58" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NombreMediator.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mediators/NombreMediator.as">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,14 +89,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Juego1View.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Juego1View.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Juego1/src/Juego1View.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="34" selection-start="3957" selection-end="3957" vertical-scroll-proportion="0.29674795">
+            <state line="61" column="68" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Crono.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/src/Crono.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MunecoClase.as" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/src/MunecoClase.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="4" selection-start="2205" selection-end="2205" vertical-scroll-proportion="-0.2082879">
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#173#220#0" expanded="true" />
+                <element signature="e#11#51#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubMenuCategoriasView.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/SubMenuCategoriasView.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="40" selection-start="4191" selection-end="4196" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfiguradorEvent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/events/ConfiguradorEvent.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Juego1Event.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/events/Juego1Event.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JuegoEvent.as" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/events/JuegoEvent.as">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="14" selection-start="169" selection-end="175" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/juegos/juego1/src/com/greensock/loading/data/SWFLoaderVars.as" />
         <option value="$PROJECT_DIR$/src/juegos/juego1/src/Juego1View.as" />
         <option value="$PROJECT_DIR$/src/juegos/juego1/Huevo_Clase.as" />
         <option value="$PROJECT_DIR$/juegos/src/Huevo_Clase.as" />
@@ -178,10 +181,11 @@
         <option value="$PROJECT_DIR$/Juego1/src/Juego1Event.as" />
         <option value="$PROJECT_DIR$/src/assets/juego1/Juego1View.as" />
         <option value="$PROJECT_DIR$/Juego1/src/HuevoClase.as" />
-        <option value="$PROJECT_DIR$/Juego1/src/Juego1View.as" />
         <option value="$PROJECT_DIR$/src/commands/CreacionCommand.as" />
         <option value="$PROJECT_DIR$/src/views/MunecoView.as" />
         <option value="$PROJECT_DIR$/src/views/NombreView.as" />
+        <option value="$PROJECT_DIR$/src/events/JuegoEvent.as" />
+        <option value="$PROJECT_DIR$/Juego1/src/Juego1View.as" />
       </list>
     </option>
   </component>
@@ -219,26 +223,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Aquarius_EscuelaPueblo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Configurador" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -297,6 +287,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Escuela_Pueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juegos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Escuela_Pueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Escuela_Pueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aquarius_EscuelaPueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Configurador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Escuela_Pueblo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Juego1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -375,11 +449,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
@@ -783,7 +867,11 @@
       <created>1349170414299</created>
       <updated>1349170414299</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inicial Barbara">
+      <created>1349198140213</created>
+      <updated>1349198140213</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -814,7 +902,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20807454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -823,18 +910,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.189441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24893162" sideWeight="0.09213251" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24893162" sideWeight="0.310559" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24893162" sideWeight="0.6925466" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24893162" sideWeight="0.6821946" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="FTP" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20807454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.189441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -875,7 +963,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicial 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicial Barbara" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -890,6 +978,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Inicial" />
     <MESSAGE value="Inicial 2" />
+    <MESSAGE value="Inicial Barbara" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -899,120 +988,85 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/juego1/MiGallina.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/MunecoClase.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="14" selection-start="2462" selection-end="2462" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#17#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/src/Assets.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/src/MunecoClase.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="26" selection-start="5573" selection-end="5573" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#11#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Juego1/src/Juego1Event.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Juego1/src/MiGallina.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/juego1/Juego1View.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="37" selection-start="6753" selection-end="6753" vertical-scroll-proportion="-17.5">
-          <folding>
-            <element signature="e#173#199#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="210" column="37" selection-start="6753" selection-end="6753" vertical-scroll-proportion="-17.5" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Juego1/src/HuevoClase.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/commands/CreacionCommand.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="60" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/MainView.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mediators/NombreMediator.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/NombreView.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="58" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="10" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/MunecoView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="64" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-0.33273056">
-          <folding>
-            <element signature="e#16#63#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="50" column="64" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-0.33273056" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/CreacionCommand.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="60" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/MainView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="32" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/NombreView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="58" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mediators/NombreMediator.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/context/MainContext.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Juego1/src/Juego1View.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="34" selection-start="3957" selection-end="3957" vertical-scroll-proportion="0.29674795">
+        <state line="61" column="68" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/src/Crono.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/SubMenuCategoriasView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="40" selection-start="4191" selection-end="4196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/events/ConfiguradorEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/events/Juego1Event.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/events/JuegoEvent.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="169" selection-end="175" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/src/MunecoClase.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="4" selection-start="2205" selection-end="2205" vertical-scroll-proportion="-0.2082879">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#173#220#0" expanded="true" />
+            <element signature="e#11#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1070,11 +1124,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Juego1|Juego1</last-edited>
+          <last-edited>Juego1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.14335664" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
