@@ -11,6 +11,14 @@ package models {
         function getNombreUsuario():String
 
         function setNombreUsuario(valor:String):void
+
+        function getIdCoke():String
+
+        function setIdCoke(valor:String):void
+
+        function getIdTabla():String
+
+        function setIdTabla(valor:String):void
 	
 	}
 }

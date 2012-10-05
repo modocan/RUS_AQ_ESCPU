@@ -11,10 +11,10 @@
             <entry library-id="558cf586-5ade-4b79-892b-6dc23bb55410">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="AS3" library-level="application">
+            <entry library-name="libs" library-level="application">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="libs" library-level="application">
+            <entry library-name="docs" library-level="application">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -70,6 +70,7 @@
     <orderEntry type="library" name="AS3" level="project" />
     <orderEntry type="library" name="AS3" level="application" />
     <orderEntry type="library" name="libs" level="application" />
+    <orderEntry type="library" name="docs" level="application" />
   </component>
 </module>
 

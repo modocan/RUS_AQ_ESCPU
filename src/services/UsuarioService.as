@@ -12,6 +12,8 @@ import com.hexagonstar.util.debug.Debug;
 
 import events.UsuarioEvent;
 
+import flash.external.ExternalInterface;
+
 import flash.net.NetConnection;
 import flash.net.Responder;
 
@@ -24,8 +26,7 @@ import org.robotlegs.mvcs.Actor;
 public class UsuarioService extends Actor implements IUsuarioService{
 
 
-    private const GATEWAY:String = 'http://aquariustest.cocacola.es/appsaquarius/escuela/pruebas_GONZALO/amfphp/gateway.p' +
-            'hp';
+    private const GATEWAY:String = 'http://aquariustest.cocacola.es/appsaquarius/escuela/amfphp/gateway.php';
     private var cn:NetConnection;
 
 
@@ -38,22 +39,60 @@ public class UsuarioService extends Actor implements IUsuarioService{
 
     public function UsuarioService() {
         super ();
+
+        ExternalInterface.addCallback('respuestaIdCoke', respuestaIdCoke);
+    }
+
+    private function respuestaIdCoke(_data:String):void
+    {
+        usuario.setIdCoke(_data);
+        dispatch(new UsuarioEvent(UsuarioEvent.COKEID_OK));
     }
 
 
-    public function guardaAvatar(_data:Object):void
+
+    public function actualizaCokeId(_data:Object):void
     {
 
         //MonsterDebugger.trace(this, _data);
 
         cn = new NetConnection();
         cn.connect(GATEWAY);
-        cn.call('ContactService.verElementos',
+        cn.call('ContactService.updateCokeId',
+                new Responder(function(_success:Object)
+                        {
+                            if(_success == 'OK')
+                            {
+                                dispatch(new UsuarioEvent(UsuarioEvent.COKEID_OK));
+                            }
+                        },
+
+                        function(fallo:Object)
+                        {
+                            MonsterDebugger.trace(this, '[FALLO GUARDAR]');
+                            MonsterDebugger.trace(this, fallo);
+                        }),
+                _data.id_tabla as String, _data.id_coke as String);
+        cn.close();
+    }
+
+
+
+    public function guardaAvatar(_data:Object):void
+    {
+
+        MonsterDebugger.trace(this, _data);
+
+        cn = new NetConnection();
+        cn.connect(GATEWAY);
+        cn.call('ContactService.guardaAvatar',
                 new Responder(function(_success:Object)
                 {
-                    MonsterDebugger.trace(this, '[RESPUESTA GUARDAR]');
-                    MonsterDebugger.trace(this, _success);
-                    //MonsterDebugger.trace(this, JSON.decode(_success as String));
+                    if(_success == 'OK')
+                    {
+                        MonsterDebugger.trace(this, '[3]');
+                        dispatch(new UsuarioEvent(UsuarioEvent.COKEID_KO));
+                    }
                 },
 
                 function(fallo:Object)
@@ -61,7 +100,7 @@ public class UsuarioService extends Actor implements IUsuarioService{
                     MonsterDebugger.trace(this, '[FALLO GUARDAR]');
                     MonsterDebugger.trace(this, fallo);
                 }),
-                '1');
+                _data);
         cn.close();
     }
 
@@ -78,6 +117,10 @@ public class UsuarioService extends Actor implements IUsuarioService{
                     if(_data != 'KO')
                     {
                         var resp:Object = JSON.decode(_data as String);
+
+                        avatar.setSexo(Object(resp[0]).sexo as String);
+                        avatar.setIdAvatar(Object(resp[0]).id_avatar as String);
+
                         usuario.setUsuario(resp[0]);
                         avatar.setPartes(resp[1]);
                     }

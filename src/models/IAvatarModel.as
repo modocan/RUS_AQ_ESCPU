@@ -13,6 +13,7 @@ public interface IAvatarModel
     function setPartes(_data:Object):void
     function setSexo(_data:String):void
     function setElemento(_data:Object):void
+    function setIdAvatar(_data:String):void
 
 
 
@@ -26,6 +27,7 @@ public interface IAvatarModel
     function getBoca():Object
     function getZapatos():Object
     function getGafas():Object
+    function getIdAvatar():String
 
 }
 }

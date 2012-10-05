@@ -1,6 +1,8 @@
 package context {
 
 import commands.CreaConfiguradorCommand;
+import commands.CrearLoginCokeCommand;
+import commands.CrearSeleccionJuegosCommand;
 import commands.ElementoElegidoCommand;
 import commands.FBIniciadoCommand;
 import commands.GuardarAvatarCommand;
@@ -86,6 +88,8 @@ import views.JuegoView;
 			commandMap.mapEvent(ConfiguradorEvent.SEXO, MenuCategoriasCommand, ConfiguradorEvent);
 			commandMap.mapEvent(UsuarioEvent.FB_INICIADO, FBIniciadoCommand, UsuarioEvent);
 			commandMap.mapEvent(UsuarioEvent.USUARIO_NUEVO, CreaConfiguradorCommand, UsuarioEvent);
+			commandMap.mapEvent(UsuarioEvent.COKEID_KO, CrearLoginCokeCommand, UsuarioEvent);
+			commandMap.mapEvent(UsuarioEvent.COKEID_OK, CrearSeleccionJuegosCommand, UsuarioEvent);
 	    }
 	
 	    private function mapModels():void

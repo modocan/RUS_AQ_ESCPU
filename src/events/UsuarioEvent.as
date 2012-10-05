@@ -12,6 +12,8 @@ public class UsuarioEvent extends Event{
 
     public static const FB_INICIADO:String = 'UsuarioEvent.FB_INICIADO';
     public static const USUARIO_NUEVO:String = 'UsuarioEvent.USUARIO_NUEVO';
+    public static const COKEID_OK:String = 'UsuarioEvent.COKEID_OK';
+    public static const COKEID_KO:String = 'UsuarioEvent.COKEID_KO';
 
     public function UsuarioEvent(tipo:String) {
         super(tipo);
