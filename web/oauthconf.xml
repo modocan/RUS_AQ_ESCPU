@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><oauth-config environment="staging" version="1.1">
+
+	<credentials>
+		<clientid>201050517664294</clientid>
+		<clientsecret>UKthxTpHQ4SvoeO3A7GKMDGvQ7BxNn</clientsecret>
+	</credentials>
+
+	<redirections>
+    <url default="true" type="register">http://aquarius.cocacola.es/ckactions/postregister</url>
+    <url default="true" type="postLogin">http://aquarius.cocacola.es/ckactions/postlogin</url>
+    <url default="true" type="confirmUser">http://aquarius.cocacola.es/ckactions/postconfirm</url>
+    <url default="true" type="postEditAccount">http://aquarius.cocacola.es/ckactions/posteditaccount</url>
+    <url default="true" type="postChangeEmail">http://aquarius.cocacola.es/ckactions/posteditaccount</url>
+  </redirections>
+
+	<sections>
+    <section default="true" id="201050517664294-main">201050517664294-main</section>
+  </sections>
+
+	<endpoints>
+		<url id="authorization_endpoint">https://savvistest.cocacola.es/oauth2/authorize</url>
+		<url id="logout_endpoint">https://savvistest.cocacola.es/oauth2/revoke</url>
+		<url id="signup_endpoint">https://savvistest.cocacola.es/oauth2/authorize</url>
+		<url id="login_status_endpoint">https://savvistest.cocacola.es/oauth2/login-status</url>
+		<url id="edit_account_endpoint">https://savvistest.cocacola.es/register/edit_account_input</url>
+		<url id="complete_account_endpoint">https://savvistest.cocacola.es/register/complete_account_input</url>
+		<url id="token_endpoint">https://savvistest.cocacola.es/oauth2/token</url>
+		<url id="next_url">https://savvistest.cocacola.es/oauth2/authorize/redirect</url>
+		<url id="cancel_url">https://savvistest.cocacola.es/oauth2/authorize/redirect</url>
+	</endpoints>
+
+	<apis>
+		<url id="query">https://savvistest.cocacola.es/api/query</url>
+		<url id="header">https://savvistest.cocacola.es/api-rest/header/data</url>
+		<url id="footer">http://savvistest.cocacola.es/api/blog/footer.action?loadJsAndCss=false</url>
+	</apis>
+</oauth-config>

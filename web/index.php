@@ -1,3 +1,12 @@
+
+<?php
+
+session_start();
+$_SESSION['prop'] = 'valor 1';
+
+?>
+
+
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -20,12 +29,9 @@
 				margin:0px;
 				padding:0px;
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-left: -405px;
-				margin-top: -400px;
 				text-align:center;
 				height:100%;
+                  width: 100%
 				background-image:url(imgs/trama.png);
 			}	
 			
@@ -33,6 +39,24 @@
 				width: 810px;
 				height: 800px;
 			}
+
+
+            #frame
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                display: none;
+            }
+
+                #frame iframe
+                {
+                    width: 100%;
+                    height: 100%;
+                }
 			
 			
 		</style>
@@ -46,6 +70,9 @@
         var APP_ID = "290061231098321";
 		var REDIRECT_URI = "https://apps.facebook.com/pruebas-papaditas/";
 		var PERMS = "publish_stream";
+        var _this = this;
+
+        window.miProp = 'mio';
 
 
         $(function(){
@@ -63,7 +90,8 @@
 
         });
 		  
-          function handleLoginStatus(response) {
+          function handleLoginStatus(response)
+          {
 
               if(response.status != 'connected')
               {
@@ -121,16 +149,23 @@
         }
 
 
+        function prueba()
+        {
+            console.log('probando!');
+        }
+
+
         function pideAmigos()
         {
             FB.api('me/friends', function(res){
                 thisMovie("imagen").reciboTodosLosAmigos(res);
-                console.log('trajo a los amigos');
+                //console.log('trajo a los amigos');
             });
         }
 
 
-      function cargarAmigos(){
+      function cargarAmigos()
+      {
           var respuesta;
           FB.api({
                 method: 'friends.getAppUsers',
@@ -145,13 +180,33 @@
 
       }
 
-       function thisMovie(movieName) {
+       function thisMovie(movieName)
+       {
          if (navigator.appName.indexOf("Microsoft") != -1) {
              return window[movieName];
          } else {
              return document[movieName];
          }
-     }
+       }
+
+
+       function crearLoginCoke(_datos)
+       {
+           $(_this).bind('miEvento', function(){
+               console.log('[ESCUCHO]');
+           });
+
+
+           $(window.miProp).change(function(){
+
+               console.log('prop cambiada!!!!!!!!!!!');
+
+           });
+
+           $('#frame iframe').attr('rel', _datos);
+           $('#frame').show('600');
+
+       }
 
        
 
@@ -161,5 +216,21 @@
 <body>
 <div id="fb-root"></div>
 <div id="imagen"></div>
+<div id="frame">
+
+    <iframe src="./login.php" rel=""></iframe>
+
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
