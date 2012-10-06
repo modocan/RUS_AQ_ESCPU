@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created with IntelliJ IDEA.
  * User: barbaradominguez
  * Date: 20/09/12
@@ -11,6 +11,7 @@ import flash.events.Event;
 public class Juego1Event extends Event{
 
     public static const JUEGO_CREADO:String = 'Juego1Event.JUEGO_CREADO';
+	public static const PUNTO:String = 'Juego1Event.PUNTO';
 
     public function Juego1Event(tipo:String) {
         super(tipo);
