@@ -28,7 +28,7 @@ public class CrearLoginCokeCommand extends Command {
     {
         MonsterDebugger.trace(this, '[USUARIO ID_TABLA]')
         MonsterDebugger.trace(this, usuario.getIdTabla());
-        ExternalInterface.call('crearLoginCoke', usuario.getIdTabla());
+        ExternalInterface.call('crearLoginCoke', usuario.get_idFB());
     }
 
 }

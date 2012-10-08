@@ -19,6 +19,13 @@ public class CrearSeleccionJuegosCommand extends Command{
 
     override public function execute():void
     {
+
+        // Saco el juego de forma temporal hasta que hagamos la pantalla de selección
+
+
+
+
+
         // TODO sacar la pantalla de selección de juegos
     }
 

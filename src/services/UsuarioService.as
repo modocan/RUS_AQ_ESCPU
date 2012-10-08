@@ -39,41 +39,6 @@ public class UsuarioService extends Actor implements IUsuarioService{
 
     public function UsuarioService() {
         super ();
-
-        ExternalInterface.addCallback('respuestaIdCoke', respuestaIdCoke);
-    }
-
-    private function respuestaIdCoke(_data:String):void
-    {
-        usuario.setIdCoke(_data);
-        dispatch(new UsuarioEvent(UsuarioEvent.COKEID_OK));
-    }
-
-
-
-    public function actualizaCokeId(_data:Object):void
-    {
-
-        //MonsterDebugger.trace(this, _data);
-
-        cn = new NetConnection();
-        cn.connect(GATEWAY);
-        cn.call('ContactService.updateCokeId',
-                new Responder(function(_success:Object)
-                        {
-                            if(_success == 'OK')
-                            {
-                                dispatch(new UsuarioEvent(UsuarioEvent.COKEID_OK));
-                            }
-                        },
-
-                        function(fallo:Object)
-                        {
-                            MonsterDebugger.trace(this, '[FALLO GUARDAR]');
-                            MonsterDebugger.trace(this, fallo);
-                        }),
-                _data.id_tabla as String, _data.id_coke as String);
-        cn.close();
     }
 
 
