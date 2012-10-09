@@ -12,7 +12,10 @@ import com.greensock.TweenMax;
 
 import flash.display.DisplayObject;
 import flash.display.MovieClip;
+import flash.display.Sprite;
 import flash.events.Event;
+import flash.events.TimerEvent;
+import flash.utils.Timer;
 
 public class MainJuego extends MovieClip {
 
@@ -22,7 +25,12 @@ public class MainJuego extends MovieClip {
     private var maximoRecetas:uint = 5;
     private var maximoIngs:uint = 5;
     private var contadorRecetas:uint = 0;
+    private var fondoBlanco:Sprite;
     private var receta:Receta;
+    private var miTiempo:Timer;
+    private var tiempoFondo:uint = 5000;
+    private var anchoReceta:Number = 0.4;
+    private var altoReceta:Number = 0.4;
 
     public function MainJuego()
     {
@@ -60,16 +68,67 @@ public class MainJuego extends MovieClip {
         }
 
 
-        receta = new Receta();
-        receta.addEventListener(Event.ADDED_TO_STAGE, initReceta);
-        addChild(receta);
+        fondoBlanco = new Sprite();
+        fondoBlanco.graphics.beginFill(0xFFFFFF, 0.7);
+        fondoBlanco.graphics.drawRect(0, 0, _this.width, _this.height);
+        fondoBlanco.graphics.endFill();
+        fondoBlanco.alpha = 0;
+        fondoBlanco.addEventListener(Event.ADDED_TO_STAGE, initBlanco);
+        addChild(fondoBlanco);
 
-        function initReceta(e:Event):void
-        {
-            receta.removeEventListener(Event.ADDED_TO_STAGE, initReceta);
-            RecetaClase(receta).pintaReceta();
-        }
 
+
+
+
+    }
+
+    function initReceta(e:Event):void
+    {
+        receta.removeEventListener(Event.ADDED_TO_STAGE, initReceta);
+        RecetaClase(receta).pintaReceta();
+
+        miTiempo = new Timer(tiempoFondo, 1);
+        miTiempo.addEventListener(TimerEvent.TIMER_COMPLETE, tiempoCompleto);
+        miTiempo.start();
+    }
+
+    function initBlanco(e:Event):void
+    {
+        fondoBlanco.removeEventListener(Event.ADDED_TO_STAGE, initBlanco);
+
+        TweenMax.to(fondoBlanco, 0.3, {alpha: 1, onComplete: function(){
+
+            receta = new Receta();
+            /*receta.x = _this.width - (receta.width + 15);
+             receta.y = _this.height - (receta.height + 15);*/
+            receta.x = (_this.width/2) - (receta.width/2);
+            receta.y = (_this.height/2) - (receta.height/2);
+            receta.addEventListener(Event.ADDED_TO_STAGE, initReceta);
+            addChild(receta);
+
+        }});
+
+    }
+
+    private function tiempoCompleto(e:TimerEvent):void
+    {
+        miTiempo.removeEventListener(TimerEvent.TIMER_COMPLETE, tiempoCompleto);
+        miTiempo.stop();
+
+        TweenMax.to(fondoBlanco, 0.3, {alpha: 0, onComplete: function(){
+
+            _this.removeChild(fondoBlanco);
+
+            var _anchoFinal:Number = receta.width * anchoReceta;
+            var _altoFinal:Number = receta.height * altoReceta;
+
+            TweenMax.to(receta, 0.8, {x: _this.width - (_anchoFinal + 95) , y: _this.height - (_altoFinal + 35) , width: _anchoFinal, height: _altoFinal, onComplete: function(){
+
+                // TODO continua el crono
+
+            }});
+
+        }});
     }
 
     private function itemHitOlla(e:Juego3Event):void
@@ -89,11 +148,27 @@ public class MainJuego extends MovieClip {
                 {
                     contadorRecetas ++;
 
-                    MonsterDebugger.trace(this, '[CAMBIO DE RECETA]');
-                    RecetaModel.getInstance().setReceta(listaRecetas[contadorRecetas]);
-                    RecetaClase(receta).pintaReceta();
 
-                    restItems();
+                    TweenMax.to(receta,  0.6, {alpha: 0, scaleX: 0, scaleY: 0, onComplete: function(){
+
+                        _this.removeChild(receta);
+
+                        MonsterDebugger.trace(this, '[CAMBIO DE RECETA]');
+                        RecetaModel.getInstance().setReceta(listaRecetas[contadorRecetas]);
+
+                        fondoBlanco = new Sprite();
+                        fondoBlanco.graphics.beginFill(0xFFFFFF, 0.7);
+                        fondoBlanco.graphics.drawRect(0, 0, _this.width, _this.height);
+                        fondoBlanco.graphics.endFill();
+                        fondoBlanco.alpha = 0;
+                        fondoBlanco.addEventListener(Event.ADDED_TO_STAGE, initBlanco);
+                        addChild(fondoBlanco);
+
+                        restItems();
+
+                    }});
+
+
 
                 }
                 else

@@ -74,8 +74,8 @@ import org.robotlegs.mvcs.Actor;
 
             if(datos.id_coke)
             {
-                // TODO generar comando para cuando hay ID de cocacola ya en BBDD
                 MonsterDebugger.trace(this, '[1]');
+                this.login_cocacola = datos.id_coke as String;
                 dispatch(new UsuarioEvent(UsuarioEvent.COKEID_OK));
             }
             else

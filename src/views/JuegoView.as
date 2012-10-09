@@ -25,32 +25,30 @@ import views.MunecoView;
 public class JuegoView extends Sprite {
 
     private var _this:JuegoView;
+    private var ruta:String;
 
-    public function JuegoView() {
+    public function JuegoView(_ruta:String) {
         super();
         _this = this;
+        ruta = _ruta;
         _this.addEventListener(Event.ADDED_TO_STAGE, init);
-
-        MonsterDebugger.initialize(this);
     }
 
     private function init(e:Event):void
     {
-        MonsterDebugger.trace(this, '[INST]');
-
         _this.removeEventListener(Event.ADDED_TO_STAGE, init);
+
+        // TODO crear precarga
 
         var cargador:Loader = new Loader();
         cargador.contentLoaderInfo.addEventListener(Event.COMPLETE, cargaOK);
         cargador.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, cargaKO);
-        cargador.load(new URLRequest('juegos/juego1.swf'));
+        cargador.load(new URLRequest(_this.ruta));
         _this.addChild(cargador);
     }
 
-    private function cargaKO(e:IOErrorEvent):void {
-
-
-
+    private function cargaKO(e:IOErrorEvent):void
+    {
 
         MonsterDebugger.trace(this, 'ERROR CARGA');
         MonsterDebugger.trace(this, e);
@@ -59,6 +57,10 @@ public class JuegoView extends Sprite {
 
     private function cargaOK(e:Event):void {
         MonsterDebugger.trace(this, '[CARGADO]');
+
+        // TODO quitar precarga
+
+
 
     }
 }

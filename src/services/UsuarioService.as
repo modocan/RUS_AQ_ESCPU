@@ -18,6 +18,7 @@ import flash.net.NetConnection;
 import flash.net.Responder;
 
 import models.IAvatarModel;
+import models.IJuegosModel;
 
 import models.IUsuarioModel;
 
@@ -35,6 +36,9 @@ public class UsuarioService extends Actor implements IUsuarioService{
 
     [Inject]
     public var avatar:IAvatarModel;
+
+    [Inject]
+    public var juegos:IJuegosModel;
 
 
     public function UsuarioService() {
@@ -85,6 +89,18 @@ public class UsuarioService extends Actor implements IUsuarioService{
 
                         avatar.setSexo(Object(resp[0]).sexo as String);
                         avatar.setIdAvatar(Object(resp[0]).id_avatar as String);
+
+                        if(Object(resp[0]).id_coke)
+                        {
+                            var _juegos:Array = new Array();
+                            _juegos = juegos.getJuegos();
+
+                            Object(_juegos[0]).puntos = Object(resp[0]).PTOS1 as String;
+                            Object(_juegos[1]).puntos = Object(resp[0]).PTOS2 as String;
+                            Object(_juegos[2]).puntos = Object(resp[0]).PTOS3 as String;
+
+                            juegos.setJuegos(_juegos);
+                        }
 
                         usuario.setUsuario(resp[0]);
                         avatar.setPartes(resp[1]);

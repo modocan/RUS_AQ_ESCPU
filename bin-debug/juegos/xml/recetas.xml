@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recetas>
+
+
+    <receta nombre="Gazpacho">
+
+        <ingrediente item="Tomate"><![CDATA[Tomate]]></ingrediente>
+        <ingrediente item="Ajo"><![CDATA[Ajo]]></ingrediente>
+        <ingrediente item="PimientoVerde"><![CDATA[Pimiento verde]]></ingrediente>
+        <ingrediente item="Aceite"><![CDATA[Aceite]]></ingrediente>
+        <ingrediente item="Pepino"><![CDATA[Pepino]]></ingrediente>
+
+    </receta>
+
+
+    <receta nombre="Lentejas">
+
+        <ingrediente item="Lentejas"><![CDATA[Lentejas]]></ingrediente>
+        <ingrediente item="Puerro"><![CDATA[Puerro]]></ingrediente>
+        <ingrediente item="Chorizo"><![CDATA[Chorizo]]></ingrediente>
+        <ingrediente item="Zanahoria"><![CDATA[Zanahoria]]></ingrediente>
+        <ingrediente item="Pimenton"><![CDATA[Pimentón]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Cocido">
+
+        <ingrediente item="Garbanzos"><![CDATA[Garbanzos]]></ingrediente>
+        <ingrediente item="Patatas"><![CDATA[Patatas]]></ingrediente>
+        <ingrediente item="Morcilla"><![CDATA[Morcilla]]></ingrediente>
+        <ingrediente item="Pollo"><![CDATA[Pollo]]></ingrediente>
+        <ingrediente item="Fideos"><![CDATA[Fideos]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Croquetas">
+
+        <ingrediente item="Leche"><![CDATA[Leche]]></ingrediente>
+        <ingrediente item="Huevos"><![CDATA[Huevos]]></ingrediente>
+        <ingrediente item="Sal"><![CDATA[Sal]]></ingrediente>
+        <ingrediente item="Harina"><![CDATA[Harina]]></ingrediente>
+        <ingrediente item="PanRallado"><![CDATA[Pan rallado]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Cochinillo">
+
+        <ingrediente item="Sal"><![CDATA[Sal]]></ingrediente>
+        <ingrediente item="Cochinillo"><![CDATA[Cochinillo]]></ingrediente>
+        <ingrediente item="Manteca"><![CDATA[Manteca]]></ingrediente>
+        <ingrediente item="Agua"><![CDATA[Agua]]></ingrediente>
+        <ingrediente item="Laurel"><![CDATA[Laurel]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Cordero">
+
+        <ingrediente item="Pimienta"><![CDATA[Pimienta]]></ingrediente>
+        <ingrediente item="Sal"><![CDATA[Sal]]></ingrediente>
+        <ingrediente item="Cordero"><![CDATA[Cordero]]></ingrediente>
+        <ingrediente item="VinoBlanco"><![CDATA[Vino blanco]]></ingrediente>
+        <ingrediente item="Limon"><![CDATA[Limón]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Lacón con Grelos">
+
+        <ingrediente item="Patatas"><![CDATA[Patatas]]></ingrediente>
+        <ingrediente item="Chorizo"><![CDATA[Chorizo]]></ingrediente>
+        <ingrediente item="Lacon"><![CDATA[Lacón]]></ingrediente>
+        <ingrediente item="Grelos"><![CDATA[Grelos]]></ingrediente>
+        <ingrediente item="Manteca"><![CDATA[Manteca]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Crema de Calabaza">
+
+        <ingrediente item="Patatas"><![CDATA[Patatas]]></ingrediente>
+        <ingrediente item="Sal"><![CDATA[Sal]]></ingrediente>
+        <ingrediente item="Pimienta"><![CDATA[Pimienta]]></ingrediente>
+        <ingrediente item="Cebolla"><![CDATA[Cebolla]]></ingrediente>
+        <ingrediente item="Calabaza"><![CDATA[Calabaza]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Sopa de Ajo">
+
+        <ingrediente item="Ajo"><![CDATA[Ajo]]></ingrediente>
+        <ingrediente item="Aceite"><![CDATA[Aceite]]></ingrediente>
+        <ingrediente item="Pimenton"><![CDATA[Pimentón]]></ingrediente>
+        <ingrediente item="Sal"><![CDATA[Sal]]></ingrediente>
+        <ingrediente item="Pan"><![CDATA[Pan]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Sopa de Cebolla">
+
+        <ingrediente item="Cebolla"><![CDATA[Cebolla]]></ingrediente>
+        <ingrediente item="Pan"><![CDATA[Pan]]></ingrediente>
+        <ingrediente item="Vinagre"><![CDATA[Vinagre]]></ingrediente>
+        <ingrediente item="VinoBlanco"><![CDATA[Vino blanco]]></ingrediente>
+        <ingrediente item="Queso"><![CDATA[Queso]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Migas">
+
+        <ingrediente item="Pan"><![CDATA[Pan]]></ingrediente>
+        <ingrediente item="Leche"><![CDATA[Leche]]></ingrediente>
+        <ingrediente item="Pimenton"><![CDATA[Pimentón]]></ingrediente>
+        <ingrediente item="Ajo"><![CDATA[Ajo]]></ingrediente>
+        <ingrediente item="Chorizo"><![CDATA[Chorizo]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Ropa Vieja">
+
+        <ingrediente item="Carne"><![CDATA[Carne]]></ingrediente>
+        <ingrediente item="Garbanzos"><![CDATA[Garbanzos]]></ingrediente>
+        <ingrediente item="Patatas"><![CDATA[Patatas]]></ingrediente>
+        <ingrediente item="Zanahoria"><![CDATA[Zanahoria]]></ingrediente>
+        <ingrediente item="Aceite"><![CDATA[Aceite]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Ensalada Campera">
+
+        <ingrediente item="Patatas"><![CDATA[Patatas]]></ingrediente>
+        <ingrediente item="Tomate"><![CDATA[Tomate]]></ingrediente>
+        <ingrediente item="Cebolla"><![CDATA[Cebolla]]></ingrediente>
+        <ingrediente item="PimientoVerde"><![CDATA[Pimiento verde]]></ingrediente>
+        <ingrediente item="Huevos"><![CDATA[Huevos]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Arroz">
+
+        <ingrediente item="Arroz"><![CDATA[Arroz]]></ingrediente>
+        <ingrediente item="Marisco"><![CDATA[Marisco]]></ingrediente>
+        <ingrediente item="Ajo"><![CDATA[Ajo]]></ingrediente>
+        <ingrediente item="PimientoVerde"><![CDATA[Pimiento verde]]></ingrediente>
+        <ingrediente item="Tomate"><![CDATA[Tomate]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Bacalao al Pil-Pil">
+
+        <ingrediente item="Aceite"><![CDATA[Aceite]]></ingrediente>
+        <ingrediente item="Ajo"><![CDATA[Ajo]]></ingrediente>
+        <ingrediente item="Bacalao"><![CDATA[Bacalao]]></ingrediente>
+        <ingrediente item="Agua"><![CDATA[Agua]]></ingrediente>
+        <ingrediente item="Guindillas"><![CDATA[Guindillas]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Pollo en Pepitoria">
+
+        <ingrediente item="Pollo"><![CDATA[Pollo]]></ingrediente>
+        <ingrediente item="Almendras"><![CDATA[Almendras]]></ingrediente>
+        <ingrediente item="Huevos"><![CDATA[Huevos]]></ingrediente>
+        <ingrediente item="VinoBlanco"><![CDATA[Vino blanco]]></ingrediente>
+        <ingrediente item="Curry"><![CDATA[Curry]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Rosquillas">
+
+        <ingrediente item="Harina"><![CDATA[Harina]]></ingrediente>
+        <ingrediente item="Huevos"><![CDATA[Huevos]]></ingrediente>
+        <ingrediente item="Leche"><![CDATA[Leche]]></ingrediente>
+        <ingrediente item="Azucar"><![CDATA[Azúcar]]></ingrediente>
+        <ingrediente item="Aceite"><![CDATA[Aceite]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Leche Frita">
+
+        <ingrediente item="Leche"><![CDATA[Leche]]></ingrediente>
+        <ingrediente item="Harina"><![CDATA[Harina]]></ingrediente>
+        <ingrediente item="Azucar"><![CDATA[Azúcar]]></ingrediente>
+        <ingrediente item="Manteca"><![CDATA[Manteca]]></ingrediente>
+        <ingrediente item="Canela"><![CDATA[Canela]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Perronillas">
+
+        <ingrediente item="Harina"><![CDATA[Harina]]></ingrediente>
+        <ingrediente item="Manteca"><![CDATA[Manteca]]></ingrediente>
+        <ingrediente item="Huevos"><![CDATA[Huevos]]></ingrediente>
+        <ingrediente item="Aguardiente"><![CDATA[Aguardiente]]></ingrediente>
+        <ingrediente item="Anis"><![CDATA[Anís]]></ingrediente>
+
+    </receta>
+
+
+
+    <receta nombre="Orejas de Fraile">
+
+        <ingrediente item="Harina"><![CDATA[Harina]]></ingrediente>
+        <ingrediente item="Huevos"><![CDATA[Huevos]]></ingrediente>
+        <ingrediente item="Leche"><![CDATA[Leche]]></ingrediente>
+        <ingrediente item="Miel"><![CDATA[Miel]]></ingrediente>
+        <ingrediente item="Limon"><![CDATA[Limón]]></ingrediente>
+
+    </receta>
+
+
+
+</recetas>

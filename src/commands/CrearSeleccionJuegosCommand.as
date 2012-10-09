@@ -6,10 +6,19 @@
  * To change this template use File | Settings | File Templates.
  */
 package commands {
+import com.demonsters.debugger.MonsterDebugger;
+
+import models.IJuegosModel;
+
 import org.robotlegs.mvcs.Command;
+
+import views.SeleccionJuegosView;
+
 
 public class CrearSeleccionJuegosCommand extends Command{
 
+    [Inject]
+    public var juegos:IJuegosModel;
 
     public function CrearSeleccionJuegosCommand()
     {
@@ -19,14 +28,23 @@ public class CrearSeleccionJuegosCommand extends Command{
 
     override public function execute():void
     {
+        MonsterDebugger.trace(this, '[SELECCION_COMMAND]');
 
-        // Saco el juego de forma temporal hasta que hagamos la pantalla de selección
+        if(contextView.numChildren > 2)
+        {
+            MonsterDebugger.trace(this, '[QUITO CONFIG]');
+            contextView.removeChildAt(1);
+        }
+
+        MonsterDebugger.trace(this, '[CREO SELECCIONADOR]');
+
+        var puntos:Array = new Array();
+        puntos = [juegos.getJuegos()[0].puntos, juegos.getJuegos()[1].puntos, juegos.getJuegos()[2].puntos];
+
+        MonsterDebugger.trace(this, puntos);
 
 
-
-
-
-        // TODO sacar la pantalla de selección de juegos
+        contextView.addChildAt(new SeleccionJuegosView(puntos), 1);
     }
 
 

@@ -1,6 +1,10 @@
 package commands
 {
 
+import events.UsuarioEvent;
+
+import flash.events.Event;
+
 import models.IDBModel;
 
 import org.robotlegs.mvcs.Command;
@@ -8,8 +12,11 @@ import org.robotlegs.mvcs.Command;
 import services.IFBService;
 
 import views.InterfazView;
+
+import views.InterfazView;
 import views.JuegoView;
 import views.MainView;
+import views.SeleccionJuegosView;
 
 public class CreacionCommand extends Command
 {
@@ -26,20 +33,31 @@ public class CreacionCommand extends Command
 
     override public function execute():void
     {
-        contextView.addChild(new InterfazView());
-
-        fb.init();
-
-
-        //contextView.addChildAt(new JuegoView(), 0);
+        var fondo:FonoJuego = new FonoJuego();
+        fondo.addEventListener(Event.ADDED_TO_STAGE, initFondo);
+        contextView.addChild(fondo);
 
 
+        function initFondo(e:Event):void
+        {
+            FonoJuego(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initFondo);
 
-        // TODO de momentos instanciamos "a pelo" el configurador. Luego habrá que comprobar para decidir
-        //contextView.addChildAt(new MainView(), 0);
-        //
+            var interfaz:InterfazView = new InterfazView();
+            interfaz.addEventListener(Event.ADDED_TO_STAGE, initInterfaz);
+            contextView.addChild(interfaz);
 
-        //contextView.addChildAt(new PruebaView(), 0);
+        }
+
+        function initInterfaz(e:Event):void
+        {
+            InterfazView(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initInterfaz);
+
+            fb.init();
+
+            //eventDispatcher.dispatchEvent(new UsuarioEvent(UsuarioEvent.COKEID_OK));
+        }
+
+
     }
 
 }

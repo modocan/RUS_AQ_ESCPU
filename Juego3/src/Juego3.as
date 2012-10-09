@@ -25,8 +25,8 @@ public class Juego3 extends Sprite {
 
         MonsterDebugger.initialize(this);
 
-        _this.stage.scaleMode = StageScaleMode.NO_SCALE;
-        _this.stage.align = StageAlign.TOP_LEFT;
+        /*_this.stage.scaleMode = StageScaleMode.NO_SCALE;
+        _this.stage.align = StageAlign.TOP_LEFT;*/
 
         _this.addEventListener(Event.ADDED_TO_STAGE, init);
     }
@@ -38,7 +38,7 @@ public class Juego3 extends Sprite {
         var cargador:URLLoader = new URLLoader();
         cargador.addEventListener(Event.COMPLETE, cargadorComplete);
         cargador.addEventListener(IOErrorEvent.IO_ERROR, errorCarga);
-        cargador.load(new URLRequest('xml/recetas.xml'));
+        cargador.load(new URLRequest('juegos/xml/recetas.xml'));
     }
 
     private function errorCarga(e:IOErrorEvent):void

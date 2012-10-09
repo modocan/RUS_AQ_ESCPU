@@ -30,13 +30,12 @@ package views
 		
 		private function init(e:Event):void
 		{
-			Debug.trace('init MainView');
 			_this.removeEventListener(Event.ADDED_TO_STAGE, init);
 			
 			// Añadimos las vistas principales al Stage
 			
-			_fondo = new Fondo_mc();
-			_this.addChild(_fondo);
+			/*_fondo = new Fondo_mc();
+			_this.addChild(_fondo);*/
 			_menu_categorias = new MenuCategoriasView();
 			_this.addChild(_menu_categorias);
 			_submenu_categorias = new SubMenuCategoriasView();
