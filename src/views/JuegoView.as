@@ -26,11 +26,17 @@ public class JuegoView extends Sprite {
 
     private var _this:JuegoView;
     private var ruta:String;
+    private var ropa:Object = new Object();
 
-    public function JuegoView(_ruta:String) {
+    public function JuegoView(_ruta:String, _ropa:Array) {
         super();
         _this = this;
         ruta = _ruta;
+        ropa = _ropa;
+
+        MonsterDebugger.trace(this, 'JUEGOVIEW');
+        MonsterDebugger.trace(this, ropa);
+
         _this.addEventListener(Event.ADDED_TO_STAGE, init);
     }
 
@@ -58,6 +64,8 @@ public class JuegoView extends Sprite {
     private function cargaOK(e:Event):void {
         MonsterDebugger.trace(this, '[CARGADO]');
 
+        MovieClip(e.currentTarget.content).ropa = ropa;
+        MovieClip(e.currentTarget.content).setRopa(ropa);
         MovieClip(e.currentTarget.content).addEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
         // TODO quitar precarga
 

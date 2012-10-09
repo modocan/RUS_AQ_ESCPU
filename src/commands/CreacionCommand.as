@@ -26,6 +26,9 @@ public class CreacionCommand extends Command
 
 
 
+
+
+
     public function CreacionCommand()
     {
         super();
@@ -54,7 +57,9 @@ public class CreacionCommand extends Command
 
             //fb.init();
 
-            eventDispatcher.dispatchEvent(new UsuarioEvent(UsuarioEvent.COKEID_OK));
+            contextView.addChildAt(new MainView(), 1);
+
+            //eventDispatcher.dispatchEvent(new UsuarioEvent(UsuarioEvent.COKEID_OK));
         }
 
 

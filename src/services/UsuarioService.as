@@ -95,9 +95,9 @@ public class UsuarioService extends Actor implements IUsuarioService{
                             var _juegos:Array = new Array();
                             _juegos = juegos.getJuegos();
 
-                            Object(_juegos[0]).puntos = Object(resp[0]).PTOS1 as String;
+                            /*Object(_juegos[0]).puntos = Object(resp[0]).PTOS1 as String;
                             Object(_juegos[1]).puntos = Object(resp[0]).PTOS2 as String;
-                            Object(_juegos[2]).puntos = Object(resp[0]).PTOS3 as String;
+                            Object(_juegos[2]).puntos = Object(resp[0]).PTOS3 as String;*/
 
                             juegos.setJuegos(_juegos);
                         }

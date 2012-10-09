@@ -6,7 +6,11 @@
  * To change this template use File | Settings | File Templates.
  */
 package commands {
+import com.demonsters.debugger.MonsterDebugger;
+
 import events.JuegoEvent;
+
+import models.IAvatarModel;
 
 import models.IJuegosModel;
 
@@ -21,6 +25,9 @@ public class CargarJuegoCommand extends Command{
 
     [Inject]
     public var juegos:IJuegosModel;
+
+    [Inject]
+    public var avatar:IAvatarModel;
 
     public function CargarJuegoCommand()
     {
@@ -38,7 +45,16 @@ public class CargarJuegoCommand extends Command{
             contextView.removeChildAt(1);
         }
 
-        contextView.addChildAt(new JuegoView(juegos.getJuegoActual().ruta as String), 1);
+        var lista_ropa:Array = new Array();
+        lista_ropa = [avatar.getBoca(), avatar.getCamisa(), avatar.getGafas(), avatar.getOjos(), avatar.getPantalon(), avatar.getPelo(), avatar.getZapatos()];
+
+        MonsterDebugger.trace(this, '[COMANDO JUEGO]');
+        MonsterDebugger.trace(this, lista_ropa);
+
+        MonsterDebugger.trace(this, '[AVATAR]');
+        MonsterDebugger.trace(this, avatar);
+
+        contextView.addChildAt(new JuegoView(juegos.getJuegoActual().ruta as String, lista_ropa), 1);
 
     }
 

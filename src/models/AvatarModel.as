@@ -79,6 +79,8 @@ public class AvatarModel extends Actor implements IAvatarModel{
             case 'top_mc':
                 _camisa = _data;
                 break;
+
+
         }
     }
 

@@ -5,10 +5,10 @@
     <title>Escuela de pueblo Aquarius</title>
     <meta property="og:title" content="Escuela de pueblo Aquarius" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://apps.facebook.com/pruebaescuela" />
+    <meta property="og:url" content="https://apps.facebook.com/pruebas-papaditas/" />
     <meta property="og:image" content="https://aquarius.cocacola.es/appsaquarius/escuela/imgs/90x90.jpg" />
     <meta property="og:site_name" content="Escuela de pueblo Aquarius" />
-	<meta property="fb:app_id" content="430270773696817" />
+	<meta property="fb:app_id" content="290061231098321" />
     <meta name="language" content="es" />
 	<meta name="description" content="Escuela de pueblo Aquarius" />
 	<meta name="keywords" content="Escuela de pueblo Aquarius" />
@@ -58,8 +58,8 @@
 
     <script type="text/javascript">
 
-        var APP_ID = "430270773696817";
-		var REDIRECT_URI = "https://apps.facebook.com/pruebaescuela";
+        var APP_ID = "290061231098321";
+		var REDIRECT_URI = "https://apps.facebook.com/pruebas-papaditas/";
 		var PERMS = "publish_stream";
 
 
@@ -177,18 +177,9 @@
 
        function crearLoginCoke(_datos)
        {
-           $(_this).bind('miEvento', function(){
-               console.log('[ESCUCHO]');
-           });
+           console.log('login_coke');
 
-
-           $(window.miProp).change(function(){
-
-               console.log('prop cambiada!!!!!!!!!!!');
-
-           });
-
-           $('#frame iframe').attr('rel', _datos);
+           $('iframe').attr('rel', _datos);
            $('#frame').show('600');
 
        }

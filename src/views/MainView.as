@@ -47,6 +47,7 @@ package views
 			_btn_fin = new BtnFinView();
 			_this.addChild(_btn_fin);
 			_muneco = new MunecoView();
+            //_muneco.config('chico', 0, 0);
 			_this.addChild(_muneco);
 			_nombre = new NombreView();
 			_this.addChild(_nombre);
