@@ -5,9 +5,6 @@
       <configuration name="Assets" pure-as="true" main-class="Assets" output-file="Assets.swf" output-folder="$MODULE_DIR$/../out/production/Assets">
         <dependencies target-player="10.2">
           <entries>
-            <entry library-name="AS3" library-level="application">
-              <dependency linkage="Merged" />
-            </entry>
             <entry library-name="libs" library-level="application">
               <dependency linkage="Merged" />
             </entry>

@@ -20,12 +20,9 @@
 				margin:0px;
 				padding:0px;
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-left: -405px;
-				margin-top: -400px;
 				text-align:center;
 				height:100%;
+                width: 100%;
 				background-image:url(imgs/trama.png);
 			}	
 			
@@ -33,6 +30,24 @@
 				width: 810px;
 				height: 800px;
 			}
+
+
+            #frame
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                display: none;
+            }
+
+                #frame iframe
+                {
+                    width: 100%;
+                    height: 100%;
+                }
 			
 			
 		</style>
@@ -111,13 +126,19 @@
                         fl.reciboDatos(res);
 						
                     });
-					FB.api('me/friends', function(res){
+					/*FB.api('me/friends', function(res){
 						thisMovie("imagen").reciboTodosLosAmigos(res); 
 						console.log('trajo a los amigos');
-				    });
+				    });*/
 
                 }
             }, {scope: PERMS});
+        }
+
+
+        function prueba()
+        {
+            console.log('probando!');
         }
 
 
@@ -138,7 +159,6 @@
               },
               function(response) {
                   respuesta=response;
-                  //console.log(respuesta);
                   thisMovie("imagen").sendToActionScript(respuesta);
                   console.log('PHP - cargarAmigos');
               }
@@ -154,6 +174,25 @@
          }
      }
 
+
+       function crearLoginCoke(_datos)
+       {
+           $(_this).bind('miEvento', function(){
+               console.log('[ESCUCHO]');
+           });
+
+
+           $(window.miProp).change(function(){
+
+               console.log('prop cambiada!!!!!!!!!!!');
+
+           });
+
+           $('#frame iframe').attr('rel', _datos);
+           $('#frame').show('600');
+
+       }
+
        
 
     </script>
@@ -162,5 +201,10 @@
 <body>
 <div id="fb-root"></div>
 <div id="imagen"></div>
+<div id="frame">
+
+    <iframe src="./login.php" rel=""></iframe>
+
+</div>
 </body>
 </html>

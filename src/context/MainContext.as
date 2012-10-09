@@ -1,9 +1,14 @@
 package context {
 
+import commands.CargarJuegoCommand;
 import commands.CreaConfiguradorCommand;
+import commands.CrearLoginCokeCommand;
+import commands.CrearSeleccionJuegosCommand;
 import commands.ElementoElegidoCommand;
 import commands.FBIniciadoCommand;
 import commands.GuardarAvatarCommand;
+
+import events.JuegoEvent;
 
 import events.UsuarioEvent;
 
@@ -12,10 +17,14 @@ import flash.display.DisplayObjectContainer;
 	import com.hexagonstar.util.debug.Debug;
 
 import mediators.JuegoMediator;
+import mediators.SeleccionJuegosMediator;
+import mediators.SelectorMediator;
 
 import models.AvatarModel;
 
 import models.IAvatarModel;
+import models.IJuegosModel;
+import models.JuegosModel;
 
 import org.robotlegs.base.ContextEvent;
 	import org.robotlegs.mvcs.Context;
@@ -24,6 +33,8 @@ import services.IUsuarioService;
 import services.UsuarioService;
 
 import views.JuegoView;
+import views.SeleccionJuegosView;
+import views.SelectorView;
 
 // Imports del proyecto
 	
@@ -86,6 +97,9 @@ import views.JuegoView;
 			commandMap.mapEvent(ConfiguradorEvent.SEXO, MenuCategoriasCommand, ConfiguradorEvent);
 			commandMap.mapEvent(UsuarioEvent.FB_INICIADO, FBIniciadoCommand, UsuarioEvent);
 			commandMap.mapEvent(UsuarioEvent.USUARIO_NUEVO, CreaConfiguradorCommand, UsuarioEvent);
+			commandMap.mapEvent(UsuarioEvent.COKEID_KO, CrearLoginCokeCommand, UsuarioEvent);
+			commandMap.mapEvent(UsuarioEvent.COKEID_OK, CrearSeleccionJuegosCommand, UsuarioEvent);
+			commandMap.mapEvent(JuegoEvent.SELECCION_JUEGO, CargarJuegoCommand, JuegoEvent);
 	    }
 	
 	    private function mapModels():void
@@ -95,6 +109,7 @@ import views.JuegoView;
 			injector.mapSingletonOf(IFBService, FBService);
 			injector.mapSingletonOf(IUsuarioService, UsuarioService);
 			injector.mapSingletonOf(IAvatarModel, AvatarModel);
+			injector.mapSingletonOf(IJuegosModel, JuegosModel);
 	    }
 	
 	    private function mapViews():void
@@ -110,6 +125,8 @@ import views.JuegoView;
 			mediatorMap.mapView(NombreView, NombreMediator);
 			mediatorMap.mapView(AmigosListView, AmigosListMediator);
 			mediatorMap.mapView(JuegoView, JuegoMediator);
+			mediatorMap.mapView(SeleccionJuegosView, SeleccionJuegosMediator);
+			mediatorMap.mapView(SelectorView, SelectorMediator);
 	    }
 	
 	}

@@ -10,11 +10,22 @@ import flash.events.Event;
 
 public class JuegoEvent extends Event {
 
+    public static const SELECCION_JUEGO:String = 'JuegoEvent.SELECCION_JUEGO';
     public static const JUEGO_CARGADO:String = 'JuegoEvent.JUEGO_CARGADO';
+
+    private var _datos:Object = new Object();
 
     public function JuegoEvent(tipo:String)
     {
         super(tipo);
+    }
+
+    public function get datos():Object {
+        return _datos;
+    }
+
+    public function set datos(value:Object):void {
+        _datos = value;
     }
 }
 }

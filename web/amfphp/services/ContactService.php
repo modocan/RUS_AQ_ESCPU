@@ -12,7 +12,7 @@ CREATE TABLE animales
 
 //CAMBIAR ESTRUCTURA DE TABLA
 
-include_once('ChromePhp.php');
+//include_once('ChromePhp.php');
 
 class ContactService
 {
@@ -56,7 +56,7 @@ class ContactService
 											
 					}
 
-                    ChromePhp::log($array);
+                    //ChromePhp::log($array);
 					
 					return(json_encode($array));
 			}
@@ -113,6 +113,116 @@ class ContactService
 			}else{
 					//Nombre: Pantalon_1, Camisa_1, Ojos_1, Ojos_2, Falda_1...
 					$db = oci_parse($conn,'DELETE FROM elem_avatar WHERE "nombre" = '.$nombre.' ');
+					$result = oci_execute($db);
+					
+					if ($result) {
+								return('SI NENA... ;) ');
+					//SI NO QUERY MUESTRO ERROR
+					}else{
+							$e = oci_error($db);  // For oci_execute errors pass the statement handle
+							return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+					}
+			}
+	}
+	
+	
+	
+	public function verAvatares(){
+		
+		$conn = oci_connect('ACDNWEB','pmf45cdn','KONAT','WE8ISO8859P1');
+			//SI NO HAY MUESTRO ERROR
+			if (!$conn) {
+					$e = oci_error();
+					return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+					die('KO_CONEXION');
+				
+			// SI HAY CONN, LANZO QUERY	
+			}else{
+					$db = oci_parse($conn,'SELECT * FROM avatar ORDER BY "id"');
+			
+					$result = oci_execute($db);
+					
+					$array = array();
+					while ($row=oci_fetch_array($db,OCI_ASSOC+OCI_RETURN_LOBS))
+					{	
+					
+						array_push($array, $row);
+											
+					}
+					
+					return(json_encode($array));
+			}
+	}
+	
+	
+	
+	public function borraAvatares(){
+
+		$conn = oci_connect('ACDNWEB','pmf45cdn','KONAT','WE8ISO8859P1');
+			//SI NO HAY MUESTRO ERROR
+			if (!$conn) {
+					$e = oci_error();
+					return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+					die('KO_CONEXION');
+				
+			// SI HAY CONN, LANZO QUERY	
+			}else{
+					//Nombre: Pantalon_1, Camisa_1, Ojos_1, Ojos_2, Falda_1...
+					$db = oci_parse($conn,'DELETE FROM avatar');
+					$result = oci_execute($db);
+					
+					if ($result) {
+								return('SI NENA... ;) ');
+					//SI NO QUERY MUESTRO ERROR
+					}else{
+							$e = oci_error($db);  // For oci_execute errors pass the statement handle
+							return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+					}
+			}
+	}
+	
+	public function verJugadores(){
+		
+		$conn = oci_connect('ACDNWEB','pmf45cdn','KONAT','WE8ISO8859P1');
+			//SI NO HAY MUESTRO ERROR
+			if (!$conn) {
+					$e = oci_error();
+					return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+					die('KO_CONEXION');
+				
+			// SI HAY CONN, LANZO QUERY	
+			}else{
+					$db = oci_parse($conn,'SELECT * FROM jugadores ORDER BY "id"');
+			
+					$result = oci_execute($db);
+					
+					$array = array();
+					while ($row=oci_fetch_array($db,OCI_ASSOC+OCI_RETURN_LOBS))
+					{	
+					
+						array_push($array, $row);
+											
+					}
+					
+					return(json_encode($array));
+			}
+	}
+	
+	
+	
+	public function borraJugadores(){
+
+		$conn = oci_connect('ACDNWEB','pmf45cdn','KONAT','WE8ISO8859P1');
+			//SI NO HAY MUESTRO ERROR
+			if (!$conn) {
+					$e = oci_error();
+					return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+					die('KO_CONEXION');
+				
+			// SI HAY CONN, LANZO QUERY	
+			}else{
+					//Nombre: Pantalon_1, Camisa_1, Ojos_1, Ojos_2, Falda_1...
+					$db = oci_parse($conn,'DELETE FROM jugadores');
 					$result = oci_execute($db);
 					
 					if ($result) {
@@ -461,89 +571,39 @@ class ContactService
 	
 	
 	
-	public function updateCokeId($id_fb, $id_coke){
+	public function updateCokeId($data){
+
+        $data = json_decode($data);
+        $id_fb = $data[0];
+        $id_coke = $data[1];
+
 		//ACTUALIZO REGISTRO CON ID COCACOLA VÁLIDO
+        $id_fb = "'".$id_fb."'";
+		$id_coke = "'".$id_coke."'";		
+		
+		$conn = oci_connect('ACDNWEB','pmf45cdn','KONAT','WE8ISO8859P1');
+		if (!$conn) {
+				
+					$e = oci_error();
+					trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+					return('KO_CONEXION');
+					die;
+				
+			// SI HAY, LANZO QUERY	
+		}else{
+	
+			$sql = oci_parse($conn,'UPDATE jugadores SET "id_coke" = '.$id_coke.' WHERE "id_fb" = '.$id_fb.' ');
+			if(oci_execute($sql)){
+				return ('OK');
+			}else{
+				return ('KO');
+			}
+		
+			oci_close($conn) ;
+		}
 	}
 	
 	
-	public function probando($jugador)
-    {
-        $id_fb = "'".$jugador['id_fb']."'";
-        $nombre = "'".$jugador['nombre']."'";
-        $sexo = "'".$jugador['sexo']."'";
-
-        $id_coke = '';
-
-        $ptos1 = "'0'";
-        $ptos2 = "'0'";
-        $ptos3 = "'0'";
-        $compartido = "'0'";
-
-        $id_avatar = "'1'";
-
-        $avatar = $jugador['avatar'];
-        $pelo = "'".$avatar['pelo']."'";
-        $ojos  = "'".$avatar['ojos']."'";
-        $boca = "'".$avatar['boca']."'";
-        $gafas = "'".$avatar['gafas']."'";
-        $sombrero = "'".$avatar['sombrero']."'";
-        $camisa = "'".$avatar['camisa']."'";
-        $pantalon = "'".$avatar['pantalon']."'";
-        $zapatos = "'".$avatar['zapatos']."'";
-        $top = "'".$avatar['top']."'";
-        $falda = "'".$avatar['falda']."'";
-
-
-        // CONECTO
-        $conn = oci_connect('ACDNWEB','pmf45cdn','KONAT','WE8ISO8859P1');
-
-        /*$db3 = oci_parse($conn,'INSERT INTO jugadores ("id", "id_fb", "nombre", "sexo", "id_coke", "id_avatar", "registro", ptos1, ptos2, ptos3, compartido) VALUES(seq_id.nextval, '.$id_fb.', '.$nombre.', '.$sexo.', '.$id_coke.', '.$id_avatar.', current_timestamp, '.$ptos1.', '.$ptos2.', '.$ptos3.', '.$compartido.' )');
-
-        if(oci_execute($db3))
-        {*/
-            $db = oci_parse($conn,'SELECT * FROM jugadores');
-            $res =  oci_execute($db);
-            $respuesta = array();
-            $val = array();
-
-            if($res)
-            {
-                while($row = oci_fetch_array($res))
-                {
-                    array_push($val, $row);
-                }
-
-                array_push($respuesta, $val);
-
-                //return json_encode($val);
-               /* $db = oci_parse($conn,'SELECT * FROM avatar');
-                $res =  oci_execute($db);
-                $val = array();
-
-                while($row = oci_fetch_array($res))
-                {
-                    array_push($val, $row);
-                }
-
-                array_push($respuesta, $val);*/
-
-                return json_encode($respuesta);
-            }
-            else
-            {
-                return json_encode('[KO - SELECT]');
-            }
-
-       /* }
-        else
-        {
-            return json_encode('[KO - INSERT]');
-        }*/
-
-
-
-        //return $respuesta;
-    }
 
 	
 	public function guardaAvatar($jugador){
@@ -552,7 +612,7 @@ class ContactService
 		$nombre = "'".$jugador['nombre']."'";
 		$sexo = "'".$jugador['sexo']."'";
 		
-		$id_coke = '';
+		$id_coke = "''";
 		
 		$ptos1 = "'0'";
 		$ptos2 = "'0'";
@@ -573,15 +633,6 @@ class ContactService
 		$falda = "'".$avatar['falda']."'";
 
 
-        ChromePhp::log('****VARS++++++');
-        ChromePhp::log($id_fb);
-        ChromePhp::log($nombre);
-        ChromePhp::log($sexo);
-        ChromePhp::log($avatar);
-        ChromePhp::log($pelo);
-
-
-
 
 
 
@@ -594,7 +645,7 @@ class ContactService
 					return(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
 			}else{	// SI HAY CONN, LANZO QUERY
 
-                    ChromePhp::log('[Conecta]');
+                    ////ChromePhp::log('[Conecta]');
 
 					$db = oci_parse($conn,'SELECT * FROM jugadores WHERE "id_fb" = '.$id_fb.' ');
 					oci_execute($db);
@@ -606,14 +657,14 @@ class ContactService
 					//echo $num_rows;
 					
 					if($num_rows < 1){
-                                 ChromePhp::log('[Usuario NO existe]');
+                                 ////ChromePhp::log('[Usuario NO existe]');
 								//$db = oci_parse($conn,'INSERTO TABLA AVATAR');
 								$db1 = oci_parse($conn,'INSERT INTO avatar ("id", "id_fb", "sexo", "pelo", "ojos", "boca", "gafas", "sombrero", "camisa", "pantalon", "zapatos", "top", "falda") VALUES(seq_id.nextval, '.$id_fb.', '.$sexo.', '.$pelo.', '.$ojos.', '.$boca.', '.$gafas.', '.$sombrero.', '.$camisa.', '.$pantalon.', '.$zapatos.', '.$top.', '.$falda.')');
 								
 								$result = oci_execute($db1);
 								
 								if ($result) {
-                                    ChromePhp::log('[Inserta Avatar]');
+                                    //ChromePhp::log('[Inserta Avatar]');
 										$db2 = oci_parse($conn,'SELECT avatar."id", avatar."id_fb" FROM avatar WHERE avatar."id_fb"='.$id_fb.'');
 										$result2 = oci_execute($db2);
 										
@@ -626,7 +677,7 @@ class ContactService
 										$id_avatar = "'".$array[0]['id']."'";
 																	
 											if ( $result2 ) {
-                                                ChromePhp::log('[Inserta jugador]');
+                                                //ChromePhp::log('[Inserta jugador]');
 												$db3 = oci_parse($conn,'INSERT INTO jugadores ("id", "id_fb", "nombre", "sexo", "id_coke", "id_avatar", "registro", ptos1, ptos2, ptos3, compartido) VALUES(seq_id.nextval, '.$id_fb.', '.$nombre.', '.$sexo.', '.$id_coke.', '.$id_avatar.', current_timestamp, '.$ptos1.', '.$ptos2.', '.$ptos3.', '.$compartido.' )');
 												$result3 = oci_execute($db3);
 												
@@ -635,29 +686,29 @@ class ContactService
 														return ('OK');
 													}else{
 														$e = oci_error($db3);  // For oci_execute errors pass the statement handle
-                                                        ChromePhp::log(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+                                                        //ChromePhp::log(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
 													}
 											
 											}else{
 												$e = oci_error($db2);  // For oci_execute errors pass the statement handle
 
-                                                ChromePhp::log(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+                                                //ChromePhp::log(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
 											}
 				
 								}else{ //SI NO QUERY MUESTRO ERROR
                                         $e = oci_error($db1);  // For oci_execute errors pass the statement handle
 
-                                    ChromePhp::log(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
+                                    //ChromePhp::log(trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR));
 								}
 					}else{
                         $e = oci_error($db);  // For oci_execute errors pass the statement handle
-                        ChromePhp::log(htmlentities($e['message']));
-                        ChromePhp::log("\n<pre>\n");
-                        ChromePhp::log( htmlentities($e['sqltext']));
-                        ChromePhp::log("\n%".($e['offset']+1)."s", "^");
-                        ChromePhp::log(  "\n</pre>\n" );
+                        //ChromePhp::log(htmlentities($e['message']));
+                        //ChromePhp::log("\n<pre>\n");
+                        //ChromePhp::log( htmlentities($e['sqltext']));
+                        //ChromePhp::log("\n%".($e['offset']+1)."s", "^");
+                        //ChromePhp::log(  "\n</pre>\n" );
 
-                        ChromePhp::log('[Usuario YA existe]');
+                        //ChromePhp::log('[Usuario YA existe]');
 						oci_close($conn) ;
 						return('YA_INSERTADO');
 					}

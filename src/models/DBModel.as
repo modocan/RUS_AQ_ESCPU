@@ -13,7 +13,7 @@ import org.robotlegs.mvcs.Actor;
 
 	public class DBModel extends Actor implements IDBModel {
 	
-	    private const GATEWAY:String = 'http://aquariustest.cocacola.es/appsaquarius/escuela/pruebas_GONZALO/amfphp/gateway.php';
+	    private const GATEWAY:String = 'http://aquariustest.cocacola.es/appsaquarius/escuela/amfphp/gateway.php';
 	    private var cn:NetConnection;
 		
 		// Categorías

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Juego3">
+    <configurations>
+      <configuration name="Juego3" pure-as="true" main-class="Juego3" output-file="juego3.swf" output-folder="$MODULE_DIR$/../bin-debug/juegos">
+        <dependencies target-player="10.2">
+          <entries>
+            <entry library-name="libs" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="eb827998-333d-409f-ad6a-1b4d8fb776f4">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="91af8c9c-2853-4f3c-b712-5d16043993f8">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="8f047fb7-3fd7-481a-9533-f6ec775cdfa6">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.5.1" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.keep-generated-actionscript" value="true" />
+          </map>
+          <option name="additionalOptions" value="-include-libraries libs/elementosPersonajes.swc" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.5.1" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="libs" level="application" />
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="eb827998-333d-409f-ad6a-1b4d8fb776f4" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/swcs/assets_juego3.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="91af8c9c-2853-4f3c-b712-5d16043993f8" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="8f047fb7-3fd7-481a-9533-f6ec775cdfa6" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

@@ -12,10 +12,13 @@ import com.hexagonstar.util.debug.Debug;
 
 import events.UsuarioEvent;
 
+import flash.external.ExternalInterface;
+
 import flash.net.NetConnection;
 import flash.net.Responder;
 
 import models.IAvatarModel;
+import models.IJuegosModel;
 
 import models.IUsuarioModel;
 
@@ -24,8 +27,7 @@ import org.robotlegs.mvcs.Actor;
 public class UsuarioService extends Actor implements IUsuarioService{
 
 
-    private const GATEWAY:String = 'http://aquariustest.cocacola.es/appsaquarius/escuela/pruebas_GONZALO/amfphp/gateway.p' +
-            'hp';
+    private const GATEWAY:String = 'http://aquariustest.cocacola.es/appsaquarius/escuela/amfphp/gateway.php';
     private var cn:NetConnection;
 
 
@@ -35,25 +37,31 @@ public class UsuarioService extends Actor implements IUsuarioService{
     [Inject]
     public var avatar:IAvatarModel;
 
+    [Inject]
+    public var juegos:IJuegosModel;
+
 
     public function UsuarioService() {
         super ();
     }
 
 
+
     public function guardaAvatar(_data:Object):void
     {
 
-        //MonsterDebugger.trace(this, _data);
+        MonsterDebugger.trace(this, _data);
 
         cn = new NetConnection();
         cn.connect(GATEWAY);
-        cn.call('ContactService.verElementos',
+        cn.call('ContactService.guardaAvatar',
                 new Responder(function(_success:Object)
                 {
-                    MonsterDebugger.trace(this, '[RESPUESTA GUARDAR]');
-                    MonsterDebugger.trace(this, _success);
-                    //MonsterDebugger.trace(this, JSON.decode(_success as String));
+                    if(_success == 'OK')
+                    {
+                        MonsterDebugger.trace(this, '[3]');
+                        dispatch(new UsuarioEvent(UsuarioEvent.COKEID_KO));
+                    }
                 },
 
                 function(fallo:Object)
@@ -61,7 +69,7 @@ public class UsuarioService extends Actor implements IUsuarioService{
                     MonsterDebugger.trace(this, '[FALLO GUARDAR]');
                     MonsterDebugger.trace(this, fallo);
                 }),
-                '1');
+                _data);
         cn.close();
     }
 
@@ -78,6 +86,22 @@ public class UsuarioService extends Actor implements IUsuarioService{
                     if(_data != 'KO')
                     {
                         var resp:Object = JSON.decode(_data as String);
+
+                        avatar.setSexo(Object(resp[0]).sexo as String);
+                        avatar.setIdAvatar(Object(resp[0]).id_avatar as String);
+
+                        if(Object(resp[0]).id_coke)
+                        {
+                            var _juegos:Array = new Array();
+                            _juegos = juegos.getJuegos();
+
+                            Object(_juegos[0]).puntos = Object(resp[0]).PTOS1 as String;
+                            Object(_juegos[1]).puntos = Object(resp[0]).PTOS2 as String;
+                            Object(_juegos[2]).puntos = Object(resp[0]).PTOS3 as String;
+
+                            juegos.setJuegos(_juegos);
+                        }
+
                         usuario.setUsuario(resp[0]);
                         avatar.setPartes(resp[1]);
                     }
