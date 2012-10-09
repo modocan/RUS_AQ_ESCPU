@@ -52,9 +52,9 @@ public class CreacionCommand extends Command
         {
             InterfazView(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initInterfaz);
 
-            fb.init();
+            //fb.init();
 
-            //eventDispatcher.dispatchEvent(new UsuarioEvent(UsuarioEvent.COKEID_OK));
+            eventDispatcher.dispatchEvent(new UsuarioEvent(UsuarioEvent.COKEID_OK));
         }
 
 

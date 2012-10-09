@@ -14,6 +14,12 @@
             <entry library-id="86fc1f18-3f80-40d2-b6cd-bf34030cfe4a">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-id="f7d790db-e87b-426d-9df2-57d32f945f13">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="e27e53c4-6a64-4c85-a023-cfba3edf3cb0">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="4.5.1" />
         </dependencies>
@@ -45,6 +51,27 @@
           <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
         </SOURCES>
         <jarDirectory url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="f7d790db-e87b-426d-9df2-57d32f945f13" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="e27e53c4-6a64-4c85-a023-cfba3edf3cb0" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../src" recursive="false" />
       </library>
     </orderEntry>
   </component>

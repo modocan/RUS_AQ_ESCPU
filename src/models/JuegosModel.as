@@ -25,17 +25,17 @@ public class JuegosModel extends Actor implements IJuegosModel{
 
             {
                 ruta: 'juegos/juego1.swf',
-                puntos: '0'
+                puntos: 'suficiente'
             },
 
             {
                 ruta: 'juegos/juego2.swf',
-                puntos: '0'
+                puntos: 'insuficiente'
             },
 
             {
                 ruta: 'juegos/juego3.swf',
-                puntos: '0'
+                puntos: 'notable'
             }
 
         ];

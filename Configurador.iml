@@ -5,16 +5,16 @@
       <configuration name="EscuelaPueblo" pure-as="true" main-class="Main" output-file="EscuelaPueblo.swf" output-folder="$MODULE_DIR$/bin-debug" wrapper-template-path="$MODULE_DIR$/html-template">
         <dependencies target-player="10.2">
           <entries>
-            <entry library-id="eb283e75-9a78-489d-b5fb-f1b0cba98674">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="558cf586-5ade-4b79-892b-6dc23bb55410">
+            <entry library-name="AS3" library-level="application">
               <dependency linkage="Merged" />
             </entry>
             <entry library-name="libs" library-level="application">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="docs" library-level="application">
+            <entry library-id="531edaca-d2fb-4e9c-a2eb-a90d0a14d9ae">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="29b2e62f-426a-42f1-abab-5795e9e6e091">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -44,33 +44,32 @@
     </content>
     <orderEntry type="jdk" jdkName="4.5.1" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library type="flex">
-        <properties id="eb283e75-9a78-489d-b5fb-f1b0cba98674" />
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/repositorioAS3" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/repositorioAS3" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library type="flex">
-        <properties id="558cf586-5ade-4b79-892b-6dc23bb55410" />
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="events" level="project" />
     <orderEntry type="library" name="AS3" level="project" />
     <orderEntry type="library" name="AS3" level="application" />
     <orderEntry type="library" name="libs" level="application" />
     <orderEntry type="library" name="docs" level="application" />
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="531edaca-d2fb-4e9c-a2eb-a90d0a14d9ae" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="29b2e62f-426a-42f1-abab-5795e9e6e091" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
 

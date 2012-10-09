@@ -58,10 +58,11 @@ public class SelectorView extends Sprite
                 _this.addEventListener(MouseEvent.CLICK, clic);
             }
 
-            var diploma:DisplayObject = dameDiploma(_data);
-            diploma.alpha = 0;
-            diploma.scaleX = diploma.scaleY = 1.2;
-            diploma.addEventListener(Event.ADDED_TO_STAGE, initDiploma);
+            var diploma:Sprite = new Sprite();
+            diploma = dameDiploma(_data) as Sprite;
+            //diploma.alpha = 0;
+            //diploma.scaleX = diploma.scaleY = 1.2;
+            //diploma.addEventListener(Event.ADDED_TO_STAGE, initDiploma);
             addChild(diploma);
         }
 
@@ -128,19 +129,15 @@ public class SelectorView extends Sprite
 
 
 
-    private function dameDiploma(_punt:String):DisplayObject
+    private function dameDiploma(_punt:String):Sprite
     {
 
-        var _clip:*;
+        var _clip:Sprite;
 
         switch (_punt)
         {
             case 'muy_deficiente':
                     _clip = new DiplomaDeficiente();
-                break;
-
-            case 'muy_deficiente':
-                _clip = new DiplomaDeficiente();
                 break;
 
             case 'insuficiente':
@@ -162,9 +159,11 @@ public class SelectorView extends Sprite
             case 'sobresaliente':
                 _clip = new DiplomaSobresaliente();
                 break;
+
+
         }
 
-        return _clip as DisplayObject;
+        return _clip as Sprite;
     }
 
 

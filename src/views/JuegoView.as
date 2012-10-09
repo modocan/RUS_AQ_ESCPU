@@ -58,10 +58,18 @@ public class JuegoView extends Sprite {
     private function cargaOK(e:Event):void {
         MonsterDebugger.trace(this, '[CARGADO]');
 
+        MovieClip(e.currentTarget.content).addEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
         // TODO quitar precarga
 
 
 
+    }
+
+    private function juegoAcabado(e:JuegoEvent):void
+    {
+        MovieClip(e.currentTarget).removeEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
+
+        MonsterDebugger.trace(this, '[JUEGO ACABADO]');
     }
 }
 }
