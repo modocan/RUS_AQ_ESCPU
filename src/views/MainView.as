@@ -52,8 +52,8 @@ package views
 			_nombre = new NombreView();
 			_this.addChild(_nombre);
 			/*_interfaz = new InterfazView();
-			_this.addChild(_interfaz);
-			_listaAmigos = new AmigosListView();
+			_this.addChild(_interfaz);  */
+			/*_listaAmigos = new AmigosListView();
 			_this.addChild(_listaAmigos);*/
 		}
 		

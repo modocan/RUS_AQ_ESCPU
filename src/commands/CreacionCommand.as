@@ -28,7 +28,7 @@ public class CreacionCommand extends Command
     {
         contextView.addChild(new InterfazView());
 
-        //fb.init();
+
 
 
         //contextView.addChildAt(new JuegoView(), 0);
@@ -38,6 +38,8 @@ public class CreacionCommand extends Command
         // TODO de momentos instanciamos "a pelo" el configurador. Luego habrá que comprobar para decidir
         contextView.addChildAt(new MainView(), 0);
         //
+
+        fb.init();
 
         //contextView.addChildAt(new PruebaView(), 0);
     }

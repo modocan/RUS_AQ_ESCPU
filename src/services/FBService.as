@@ -26,7 +26,7 @@ public class FBService extends Actor implements IFBService {
 
     private var usuario:Object;
     private var amigosQjugaron:Array;
-    private const APP_ID:String = '273344839447085';
+    private const APP_ID:String = '430270773696817';
 
     public function FBService(){
 
@@ -45,7 +45,7 @@ public class FBService extends Actor implements IFBService {
         ExternalInterface.addCallback("sendToActionScript", AmigosQueYaHanJugado);
         ExternalInterface.addCallback("reciboTodosLosAmigos", todosLosAmigos);
         ExternalInterface.call('conectaFB');
-        //ExternalInterface.call('cargarAmigos');
+        ExternalInterface.call('cargarAmigos');
 
     }
 
