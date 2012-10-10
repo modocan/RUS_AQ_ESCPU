@@ -16,6 +16,8 @@ import flash.display.DisplayObjectContainer;
 		
 	import com.hexagonstar.util.debug.Debug;
 
+import mediators.FinJuegoMediator;
+
 import mediators.JuegoMediator;
 import mediators.SeleccionJuegosMediator;
 import mediators.SelectorMediator;
@@ -31,6 +33,8 @@ import org.robotlegs.base.ContextEvent;
 
 import services.IUsuarioService;
 import services.UsuarioService;
+
+import views.FinJuegoView;
 
 import views.JuegoView;
 import views.SeleccionJuegosView;
@@ -100,6 +104,7 @@ import views.SelectorView;
 			commandMap.mapEvent(UsuarioEvent.COKEID_KO, CrearLoginCokeCommand, UsuarioEvent);
 			commandMap.mapEvent(UsuarioEvent.COKEID_OK, CrearSeleccionJuegosCommand, UsuarioEvent);
 			commandMap.mapEvent(JuegoEvent.SELECCION_JUEGO, CargarJuegoCommand, JuegoEvent);
+			commandMap.mapEvent(JuegoEvent.VOLVER, CrearSeleccionJuegosCommand, JuegoEvent);
 	    }
 	
 	    private function mapModels():void
@@ -127,6 +132,7 @@ import views.SelectorView;
 			mediatorMap.mapView(JuegoView, JuegoMediator);
 			mediatorMap.mapView(SeleccionJuegosView, SeleccionJuegosMediator);
 			mediatorMap.mapView(SelectorView, SelectorMediator);
+			mediatorMap.mapView(FinJuegoView, FinJuegoMediator);
 	    }
 	
 	}

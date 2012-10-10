@@ -166,6 +166,21 @@
 
       }
 
+
+        function compartirJuego()
+        {
+            FB.ui({
+
+                method: 'feed',
+                name: 'Escuela de Pueblo',
+                link: REDIRECT_URI,
+                picture: 'https://aquariustest.cocacola.es/appsaquarius/escuela/img_fb.png',
+                caption: 'Compartiendo',
+                description: 'Lorem ipsum dolor sit amet'
+
+            });
+        }
+
        function thisMovie(movieName) {
          if (navigator.appName.indexOf("Microsoft") != -1) {
              return window[movieName];

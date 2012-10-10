@@ -13,6 +13,7 @@ public class JuegoEvent extends Event {
     public static const SELECCION_JUEGO:String = 'JuegoEvent.SELECCION_JUEGO';
     public static const JUEGO_CARGADO:String = 'JuegoEvent.JUEGO_CARGADO';
     public static const JUEGO_ACABADO:String = 'JuegoEvent.JUEGO_ACABADO';
+    public static const VOLVER:String = 'JuegoEvent.VOLVER';
 
     private var _datos:Object = new Object();
 

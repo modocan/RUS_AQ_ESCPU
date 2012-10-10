@@ -10,6 +10,8 @@ package {
 import com.demonsters.debugger.MonsterDebugger;
 import com.greensock.TweenMax;
 
+import events.JuegoEvent;
+
 import flash.display.DisplayObject;
 import flash.display.MovieClip;
 import flash.display.Sprite;
@@ -22,7 +24,7 @@ public class MainJuego extends MovieClip {
     private var _this:MainJuego;
     private var olla:MovieClip;
     private var listaRecetas:Array;
-    private var maximoRecetas:uint = 5;
+    private var maximoRecetas:uint = 2;
     private var maximoIngs:uint = 5;
     private var contadorRecetas:uint = 0;
     private var fondoBlanco:Sprite;
@@ -144,9 +146,11 @@ public class MainJuego extends MovieClip {
 
             if(RecetaModel.getInstance().tachados >= maximoIngs)
             {
+                contadorRecetas ++;
+
                 if(contadorRecetas < maximoRecetas )
                 {
-                    contadorRecetas ++;
+
 
 
                     TweenMax.to(receta,  0.6, {alpha: 0, scaleX: 0, scaleY: 0, onComplete: function(){
@@ -174,6 +178,9 @@ public class MainJuego extends MovieClip {
                 else
                 {
                     // TODO hacer FIN JUEGO
+                    var evento:JuegoEvent = new JuegoEvent(JuegoEvent.JUEGO_ACABADO);
+                    evento.datos = damePuntuacion();
+                    _this.dispatchEvent(evento);
                 }
 
             }
@@ -185,6 +192,46 @@ public class MainJuego extends MovieClip {
         }
 
     }
+
+
+    private function damePuntuacion():String
+    {
+        var resp:String;
+
+        switch (contadorRecetas)
+        {
+            case 0:
+                    resp = 'muy_deficiente';
+                break;
+
+            case 1:
+                resp = 'insuficiente';
+                break;
+
+            case 2:
+                resp = 'insuficiente';
+                break;
+
+            case 3:
+                resp = 'suficiente';
+                break;
+
+            case 4:
+                resp = 'bien';
+                break;
+
+            case 5:
+                resp = 'notable';
+                break;
+
+            case 6:
+                resp = 'sobresaliente';
+                break;
+        }
+
+        return resp;
+    }
+
 
     private function echaItemOlla(_item:DisplayObject):void
     {

@@ -3,6 +3,10 @@ package {
 import com.demonsters.debugger.MonsterDebugger;
 import com.demonsters.debugger.MonsterDebugger;
 
+import events.JuegoEvent;
+
+import flash.display.MovieClip;
+
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
@@ -13,10 +17,11 @@ import flash.net.URLRequest;
 import flash.text.TextField;
 
 [SWF(frameRate="24", height="800", width="600")]
-public class Juego3 extends Sprite {
+public class Juego3 extends MovieClip {
 
     private var _this:Juego3;
     private var main:MainJuego3;
+    public var ropa:Array = new Array();
 
     public function Juego3()
     {
@@ -76,9 +81,19 @@ public class Juego3 extends Sprite {
         }
 
         main = new MainJuego3();
+        main.addEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
         MainJuego(main).prepararRecetas(listado);
         addChild(main);
 
+    }
+
+    private function juegoAcabado(e:JuegoEvent):void
+    {
+        main.removeEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
+
+        var evento:JuegoEvent = new JuegoEvent(JuegoEvent.JUEGO_ACABADO);
+        evento.datos = e.datos;
+        _this.dispatchEvent(evento);
     }
 
 }

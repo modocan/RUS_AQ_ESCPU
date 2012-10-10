@@ -7,6 +7,9 @@
  */
 package views {
 import com.demonsters.debugger.MonsterDebugger;
+import com.greensock.TweenMax;
+
+import events.Juego1Event;
 
 import events.JuegoEvent;
 
@@ -14,6 +17,7 @@ import flash.display.DisplayObject;
 
 import flash.display.Loader;
 import flash.display.MovieClip;
+import flash.display.Sprite;
 
 import flash.display.Sprite;
 import flash.events.Event;
@@ -65,7 +69,7 @@ public class JuegoView extends Sprite {
         MonsterDebugger.trace(this, '[CARGADO]');
 
         MovieClip(e.currentTarget.content).ropa = ropa;
-        MovieClip(e.currentTarget.content).setRopa(ropa);
+        //MovieClip(e.currentTarget.content).setRopa(ropa);
         MovieClip(e.currentTarget.content).addEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
         // TODO quitar precarga
 
@@ -77,7 +81,43 @@ public class JuegoView extends Sprite {
     {
         MovieClip(e.currentTarget).removeEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
 
-        MonsterDebugger.trace(this, '[JUEGO ACABADO]');
+        // TODO lanzar evento para setear la nueva puntuación
+
+        var _punt:String = e.datos as String;
+
+        var fondoBlanco:Sprite = new Sprite();
+        fondoBlanco.graphics.beginFill(0xFFFFFF, 0.7);
+        fondoBlanco.graphics.drawRect(0, 0, _this.width, _this.height);
+        fondoBlanco.graphics.endFill();
+        fondoBlanco.alpha = 0;
+        fondoBlanco.addEventListener(Event.ADDED_TO_STAGE, initFondo);
+        addChild(fondoBlanco);
+
+        function initFondo(e:Event):void
+        {
+            fondoBlanco.removeEventListener(Event.ADDED_TO_STAGE, initFondo);
+
+            TweenMax.to(fondoBlanco, 0.5, {alpha: 1, onComplete: function(){
+
+                var fin:FinJuegoView = new FinJuegoView(_punt);
+                fin.x = _this.width/2;
+                fin.y = _this.height/2;
+                fin.scaleX = fin.scaleY = fin.alpha = 0;
+                fin.addEventListener(Event.ADDED_TO_STAGE, initFin);
+                addChild(fin);
+
+            }});
+
+
+        }
+
+    }
+
+    private function initFin(e:Event):void
+    {
+        Sprite(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initFin);
+
+        TweenMax.to(Sprite(e.currentTarget), 0.5, {alpha: 1, scaleX: 1, scaleY: 1});
     }
 }
 }
