@@ -11,6 +11,8 @@ import org.robotlegs.mvcs.Command;
 
 import services.IFBService;
 
+import views.HomeView;
+
 import views.InterfazView;
 
 import views.InterfazView;
@@ -20,12 +22,6 @@ import views.SeleccionJuegosView;
 
 public class CreacionCommand extends Command
 {
-
-    [Inject]
-    public var fb:IFBService;
-
-
-
 
 
 
@@ -55,7 +51,11 @@ public class CreacionCommand extends Command
         {
             InterfazView(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initInterfaz);
 
-            fb.init();
+            contextView.addChildAt(new HomeView(), 1);
+
+            //fb.init();
+
+            //contextView.addChildAt(new MainView(), 1);
 
             //contextView.addChildAt(new SeleccionJuegosView(['suficiente', 'bien', 'notable']), 1);
         }

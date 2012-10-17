@@ -43,6 +43,66 @@ public class UsuarioService extends Actor implements IUsuarioService{
 
     public function UsuarioService() {
         super ();
+
+        ExternalInterface.addCallback('juegoCompartido', juegoCompartido);
+    }
+
+    private function juegoCompartido():void
+    {
+        MonsterDebugger.trace(this, '[COMPARTE]');
+
+        var _data:Object = new Object();
+        _data = {
+            nombre: usuario.getNombreUsuario() as String,
+            id_fb: usuario.get_idFB() as String
+        }
+
+        cn = new NetConnection();
+        cn.connect(GATEWAY);
+        cn.call('ContactService.insertaGanadorCompartir',
+                new Responder(function(_success:Object)
+                        {
+                            if(_success == 'OK')
+                            {
+                                MonsterDebugger.trace(this, '[RESPUESTA COMPARTIR]');
+                                //dispatch(new UsuarioEvent(UsuarioEvent.COKEID_KO));
+                            }
+                        },
+
+                        function(fallo:Object)
+                        {
+                            MonsterDebugger.trace(this, '[FALLO GUARDAR]');
+                            MonsterDebugger.trace(this, fallo);
+                        }),
+                _data);
+        cn.close();
+    }
+
+
+
+    public function actualizaPuntos(_data:Object):void
+    {
+        MonsterDebugger.trace(this, '[ACTUALIZA PUNTOS]');
+
+        cn = new NetConnection();
+        cn.connect(GATEWAY);
+        cn.call('ContactService.insertaGanadorMatricula',
+                new Responder(function(_success:Object)
+                        {
+                            /*if(_success == 'OK')
+                            {*/
+                                MonsterDebugger.trace(this, '[RESPUESTA PUNTOS]');
+                                //dispatch(new UsuarioEvent(UsuarioEvent.COKEID_KO));
+                            //}
+                        },
+
+                        function(fallo:Object)
+                        {
+                            MonsterDebugger.trace(this, '[FALLO GUARDAR]');
+                            MonsterDebugger.trace(this, fallo);
+                        }),
+                _data);
+        cn.close();
     }
 
 

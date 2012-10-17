@@ -138,7 +138,7 @@
 
         function prueba()
         {
-            console.log('probando!');
+            //console.log('probando!');
         }
 
 
@@ -146,7 +146,7 @@
         {
             FB.api('me/friends', function(res){
                 thisMovie("imagen").reciboTodosLosAmigos(res);
-                console.log('PHP - pideAmigos');
+                //console.log('PHP - pideAmigos');
             });
         }
 
@@ -160,7 +160,7 @@
               function(response) {
                   respuesta=response;
                   thisMovie("imagen").sendToActionScript(respuesta);
-                  console.log('PHP - cargarAmigos');
+                  //console.log('PHP - cargarAmigos');
               }
           );
 
@@ -178,6 +178,14 @@
                 caption: 'Compartiendo',
                 description: 'Lorem ipsum dolor sit amet'
 
+            }, function(resp){
+
+                if(resp.post_id)
+                {
+                    fl = document.getElementById('imagen');
+                    fl.juegoCompartido();
+                }
+
             });
         }
 
@@ -192,7 +200,7 @@
 
        function crearLoginCoke(_datos)
        {
-           console.log('login_coke');
+           //console.log('login_coke');
 
            $('iframe').attr('rel', _datos);
            $('#frame').show('600');
@@ -209,7 +217,7 @@
 <div id="imagen"></div>
 <div id="frame">
 
-    <iframe src="./login.php" rel=""></iframe>
+    <iframe src="https://aquariustest.cocacola.es/appsaquarius/escuela/login.php" rel=""></iframe>
 
 </div>
 </body>

@@ -12,5 +12,8 @@ public interface IUsuarioService {
 
     function guardaAvatar(_data:Object):void
 
+    function actualizaPuntos(_data:Object):void
+
+
 }
 }

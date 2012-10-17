@@ -87,28 +87,27 @@ public class AvatarModel extends Actor implements IAvatarModel{
 
     public function setPartes(_data:Object):void
     {
+        MonsterDebugger.trace(this, '[MI AVATAR]');
+        MonsterDebugger.trace(this, _data);
 
         this._ojos = { mc: 'ojos_mc', name: _data.ojos as String }
         this._boca = { mc: 'boca_mc', name: _data.boca as String }
         this._pelo = { mc: 'pelo_mc', name: _data.pelo as String }
+        this._gafas = { mc: 'gafas_mc', name: _data.gafas as String }
 
-        // GAFAS
-        if(_data.gafas != 'nada')
-        {
-            this._gafas = { mc: 'gafas_mc', name: _data.gafas as String }
-
-        }
 
 
         // PANTALON - FALDA
         if(_data.pantalon != 'nada')
         {
-            if(_data.pantalon.length > 0 && _data.pantalon.parte1)
+            if(String(_data.pantalon).substr(0, String(_data.pantalon).length-2) == 'Pantalon')
             {
                 var nItem:String = String(_data.pantalon).substr(String(_data.pantalon).length - 1, 1);
 
                 this._pantalon = {
-                    tipoPartes: '_pantalon',
+                    tipoPartes: 'pantalon',
+                    mc: 'pantalon_mc',
+                    name: _data.pantalon as String,
                     parte1: 'PiernaIzq_' + nItem,
                     parte2: 'Paquete_' + nItem,
                     parte3: 'PiernaDer_' + nItem
@@ -119,9 +118,10 @@ public class AvatarModel extends Actor implements IAvatarModel{
                 var nItem:String = String(_data.falda).substr(String(_data.falda).length - 1, 1);
 
                 this._pantalon = {
-                    tipoPartes: '_pantalon',
+                    tipoPartes: 'pantalon',
                     parte2: 'Falda_' + nItem,
-                    mc: 'falda_mc'
+                    mc: 'falda_mc',
+                    name: _data.pantalon as String
                 }
             }
         }
@@ -131,12 +131,14 @@ public class AvatarModel extends Actor implements IAvatarModel{
         // CAMISA -TOP
         if(_data.camisa != 'nada')
         {
-            if(_data.camisa.length > 0 && _data.camisa.parte1)
+            if(String(_data.camisa).substr(0, String(_data.camisa).length-2) == 'Camisa')
             {
                 var nItemCamisa:String = String(_data.camisa).substr(String(_data.camisa).length - 1, 1);
 
                 this._camisa = {
-                    tipoPartes: '_camisa',
+                    tipoPartes: 'camisa',
+                    mc: 'camisa_mc',
+                    name: _data.camisa as String,
                     parte1: 'BrazoIzq_' + nItemCamisa,
                     parte2: 'Torso_' + nItemCamisa,
                     parte3: 'BrazoDer_' + nItemCamisa
@@ -146,10 +148,11 @@ public class AvatarModel extends Actor implements IAvatarModel{
             {
                 var nItemCamisa:String = String(_data.falda).substr(String(_data.falda).length - 1, 1);
 
-                this._pantalon = {
-                    tipoPartes: '_camisa',
+                this._camisa = {
+                    tipoPartes: 'camisa',
                     parte2: 'Top_' + nItemCamisa,
-                    mc: 'top_mc'
+                    mc: 'top_mc',
+                    name: _data.camisa as String
                 }
             }
         }
@@ -162,7 +165,7 @@ public class AvatarModel extends Actor implements IAvatarModel{
             var nItemZapatos:String = String(_data.zapatos).substr(String(_data.zapatos).length - 1, 1);
             this._zapatos = {
 
-                tipoPartes: '_zapatos',
+                tipoPartes: 'zapatos',
                 parte1: 'ZapatoIzq_' + nItemZapatos,
                 parte2: 'ZapatoDer_' + nItemZapatos
 

@@ -1,140 +1,125 @@
 <?php
-use \libCokeId\LibCokeId;
+/*use \libCokeId\LibCokeId;
 use \libCokeId\Console;
-use \libCokeId\HeaderApi;
-use \libCokeId\CokeIdUrlBuilder;
-require ($_SERVER['DOCUMENT_ROOT'].'/php-library-for-cokeid/libcokeid/LibCokeId.php');
-require ($_SERVER['DOCUMENT_ROOT'].'/php-library-for-cokeid/libcokeid/class.HeaderApi.php');
+use \libCokeId\HeaderApi;*/
+
+//use \libCokeId\LibCokeId;
+
+require (dirname(__FILE__).'/../php-library-for-cokeid/libcokeid/LibCokeId.php');
+
+
 
 
 //require 'header.php';
-header("Content-type: text/html; charset=UTF-8");
-require 'php/utils/config.php';
+//header("Content-type: text/html; charset=UTF-8");
 
-try {
-	
-$libCokeId = new LibCokeId();
-$libCokeId->synchronizeSessionWithServer();
 
-// si le han dado a volver en el form de modifiación de datas
-if (isset($_GET['error']) && $_GET['error'] == 'user_cancel') {
-	if (isset($_SESSION['last_url_oauth'])){
-		$url = $_SESSION['last_url_oauth']."?".$_SERVER['QUERY_STRING'];
-	}else {
-		$url = "/?".$_SERVER['QUERY_STRING'];
-	}
-	header('Location: '.str_replace("?error=user_cancel", "", $url));
-	exit();
+
+$url = '';
+
+if (isset($_SESSION['last_url_oauth'])){
+    $url = $_SESSION['last_url_oauth']."?".$_SERVER['QUERY_STRING'];
+}else {
+    $url = "/?".$_SERVER['QUERY_STRING'];
 }
 
-$urlBuilder = new CokeIdUrlBuilder($libCokeId);
 
-/**
- * hablando con Alejandro Gonzalez me dice que 'probablemente' al actualizar datos cocacola desloguea al usuario
- */
-if ( ! $libCokeId->isConnected()) {
-	header('Location: '.$urlBuilder->getUrlLogin());
-	exit;
+if ($url!=''){
+    $libCokeId = new \libCokeId\LibCokeId();
+    $libCokeId->synchronizeSessionWithServer();
+
+    $miData = $libCokeId->getUserLogged()->id;
+    //ChromePhp::log($libCokeId->getUserLogged());
+
+
+
+
 }
 
-$headerApi = new HeaderApi($libCokeId);
-$headerApi->getHeader(array(COKEID_API_HEADER_ID));
 
-// html
+
+
 ?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-ES" lang="es-ES">
-	<head>	
-	<link href="static/css/aquarius-huerfanos.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body class="huerfanos" id="posteditaccount">
-		<!--- cocacola.es header -->
-		<div id="header">
-		<?php echo $headerApi->html;?>
-		</div>
-		<!--- cocacola.es header end --> 
-		<!--- Content -->
-		<div id="main-body">
-			<div id="main-body-inner" class="ie-rel-fix">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Post Confirm Register</title>
 
-                <p>Entorno Papaditas</p>
+    <style type="text/css">
 
-			<div class="wrap-container">
-				<div class="container">
-					<div class="mainh-content">
-						<div class="alert">
-							<img src="static/img/alert.png" width="620" height="408" />
-							<?php
-							if ($libCokeId->isConnected()) {
-	
-								// ...mirar si ha completado el registro en CokeID y en esta promo "aquarius-pueblos 2012": es decir, validar si ha entrado al registro por 'nuestra section'							
-								$userCompletePromo = $libCokeId->checkUserComplete($libCokeId->oauth_config->getSection('default'));
-								
-								if ($userCompletePromo) {
+        body
+        {
+            background-image: url("imgs/trama.png");
+        }
 
-									// miraremos si no existe en nuestra bbdd para darlo de alta
-									require_once 'php/utils/conexion.php';
-									require_once 'php/utils/class_aq_user.php';
+        @font-face {
+            font-family: 'Fuente';
+            src: url('A_Font_with_Serifs.eot');
+            src: local('☺'), url('A_Font_with_Serifs.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-									// consulta de datos de user logado
-									$userLogged  = $libCokeId->getUserLogged();
-						
-									$oUser = new aq_user();
-									$uid = $oUser->_existe(array('COKEID_ID' => $userLogged->id));
-									if ($uid == 0) {
-										// no lo tenemos, así que lo registramos
-										$sql = "INSERT INTO ".$oUser->_get_config('db_table')." (USER_ID, COKEID_ID, PICTURE, DESCRIPTION, STATUS,CREATED_ON)"
-											. " VALUES(AQ_USERS_SEQ.nextval, '".$userLogged->id."', NULL, NULL, 'C', sysdate)";
-										$oUser->_db_query($sql);
-										// obtener id
-										//$uid = $oUser->_existe(array('COKEID_ID' => $userLogged->id));
-									}
-									?>
-									<div class="alert-txt">Datos actualizados<br />correctamente.<br />
-									<br /><a href="<?php echo isset($_SESSION['last_url_oauth']) ? $_SESSION['last_url_oauth'] : URL_APP ?>">continuar &raquo;</a>
-									</div>
-									<?php
-								}
-								else {
-									// aún le falta 'completeaccount' (supongo que le ha dado a 'volver', así que le volvemos a mostrar que se identifique)
-									?>
-									<div class="alert-txt">Para identificarte como huérfano debes registrarte en Aquarius Pueblos<br />
-									<br /><a href="/ckactions/completeaccount/<?php echo $libCokeId->oauth_config->getSection('default') ?>"><!--Completar registro Aquarius-Pueblos 2012 en Cocacola-->continuar &raquo;</a>
-									</div>
-									<?php
-								}
-								
-							}
-							else {
-								// puede ser que haya cambiado de contraseña y entonces le han deslogado en cocacola
-								?>
-								<div class="alert-txt">Datos actualizados<br />correctamente.<br />
-								<br />Para identificarte como huérfano debes registrarte en cocacola.es<br />
-								<br /><a href="<?php echo $urlBuilder->getUrlRegister() ?>">Registro &raquo;</a>
-								<br />
-								<br /><a href="<?php echo $urlBuilder->getUrlLogin() ?>">Identifícate &raquo;</a>
-								</div>
-								<?php
-							}
-							?>
-						</div>
-					</div>
-				</div>
-			</div>
+        div.caja
+        {
+            width: 384px;
+            height: 228px;
+            position: relative;
+            margin: 200px auto;
+            padding-top: 1px;
+            background-image: url("imgs/caja_login.png");
+        }
+
+        div.caja p {
+            font-family: Fuente;
+            position: relative;
+            margin-top: 90px;
+            color: #94682e;
+            margin-left: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        a.enlace_doble:link,
+        a.enlace_doble:hover,
+        a.enlace_doble:visited
+        {
+            font-family: "Fuente";
+            text-transform: uppercase;
+            display: block;
+            width: 83px;
+            height: 28px;
+            color: #5E411E;
+            font-size: 14px;
+            text-decoration: none;
+            background-image: url("imgs/boton.png");
+            text-align: center;
+            line-height: 30px;
+            float: left;
+            margin-left: 155px;
+            margin-top: 7px;
+        }
+
+    </style>
 
 
-			</div>
-		</div>
-		<!--- Content end -->
-		<!--- footer -->
-		<?php echo $headerApi->getFooter();?>
-		<!--- footer end -->
-<?php include 'stats.php'; ?>
-	</body>
+</head>
+
+<body>
+
+
+<div class="caja">
+
+    <p>¡Bien hecho!<br />Ya puedes participar en La Escuela de Pueblo</p>
+
+    <a class="enlace_doble" id="enlace_login" href="https://apps.facebook.com/escuela_aquarius/">Entrar</a>
+
+</div>
+
+</body>
+
 </html>
-<?php 
-} catch (Exception $e) {
 
-	header('Location: /error.php?er='.$e->getCode());
-}
-?>

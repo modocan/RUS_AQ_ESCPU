@@ -58,10 +58,13 @@ public class RecetaClase extends MovieClip {
 
     public function tachaIngrediente(ing:String):void
     {
+        trace('tacho');
+
         for each(var obj:TextField in _this)
         {
             if(obj.name != 'titulo' && obj.text == ing)
             {
+                trace('tachado');
                 //TweenMax.to(obj,  0.2, {tint: 0xFF0000});
                 var tachon:Tachon = new Tachon();
                 tachon.x = obj.x;

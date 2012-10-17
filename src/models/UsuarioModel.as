@@ -62,6 +62,19 @@ import org.robotlegs.mvcs.Actor;
             return this.id_tabla;
         }
 
+
+        public function getCompartido():String
+        {
+            return this.compartido;
+        }
+
+
+        public function setCompartido():void
+        {
+            this.compartido = '1';
+        }
+
+
         public function setUsuario(datos:Object)
         {
             MonsterDebugger.trace(this, '[SET USUARIO]');

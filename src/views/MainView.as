@@ -33,9 +33,7 @@ package views
 			_this.removeEventListener(Event.ADDED_TO_STAGE, init);
 			
 			// Añadimos las vistas principales al Stage
-			
-			/*_fondo = new Fondo_mc();
-			_this.addChild(_fondo);*/
+
 			_menu_categorias = new MenuCategoriasView();
 			_this.addChild(_menu_categorias);
 			_submenu_categorias = new SubMenuCategoriasView();
@@ -47,13 +45,10 @@ package views
 			_btn_fin = new BtnFinView();
 			_this.addChild(_btn_fin);
 			_muneco = new MunecoView();
+            _muneco.scaleX = _muneco.scaleY = 0.7;
 			_this.addChild(_muneco);
 			_nombre = new NombreView();
 			_this.addChild(_nombre);
-			/*_interfaz = new InterfazView();
-			_this.addChild(_interfaz);  */
-			/*_listaAmigos = new AmigosListView();
-			_this.addChild(_listaAmigos);*/
 		}
 		
 	}

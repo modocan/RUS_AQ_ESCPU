@@ -28,10 +28,50 @@ public class Juego3 extends MovieClip {
         super();
         _this =  this;
 
+        ropa = [
+            {
+                mc: 'ojos_mc', name: 'Ojos_2'
+            },
+            {
+                mc: 'boca_mc', name: 'Boca_2'
+            },
+            {
+                mc: 'pelo_mc', name: 'Pelo_2'
+            },
+            {
+                mc: 'gafas_mc', name: 'Gafas_2'
+            },
+            {
+                tipoPartes: 'pantalon',
+                mc: 'pantalon_mc',
+                name: 'Pantalon_2',
+                parte1: 'PiernaIzq_2',
+                parte2: 'Paquete_2',
+                parte3: 'PiernaDer_2'
+            },
+            {
+                tipoPartes: 'camisa',
+                mc: 'camisa_mc',
+                name: 'Camisa_2',
+                parte1: 'BrazoIzq_2',
+                parte2: 'Torso_2',
+                parte3: 'BrazoDer_2'
+            },
+            /*{
+                tipoPartes: 'zapatos',
+                parte1: 'ZapatoIzq_2',
+                parte2: 'ZapatoDer_2'
+            }*/
+            {
+                name: 'nada'
+            }
+        ];
+
         MonsterDebugger.initialize(this);
 
-        /*_this.stage.scaleMode = StageScaleMode.NO_SCALE;
-        _this.stage.align = StageAlign.TOP_LEFT;*/
+        // TODO comentar el Stage para producción
+        _this.stage.scaleMode = StageScaleMode.NO_SCALE;
+        _this.stage.align = StageAlign.TOP_LEFT;
 
         _this.addEventListener(Event.ADDED_TO_STAGE, init);
     }
@@ -43,7 +83,8 @@ public class Juego3 extends MovieClip {
         var cargador:URLLoader = new URLLoader();
         cargador.addEventListener(Event.COMPLETE, cargadorComplete);
         cargador.addEventListener(IOErrorEvent.IO_ERROR, errorCarga);
-        cargador.load(new URLRequest('juegos/xml/recetas.xml'));
+        //cargador.load(new URLRequest('juegos/xml/recetas.xml'));
+        cargador.load(new URLRequest('xml/recetas.xml'));
     }
 
     private function errorCarga(e:IOErrorEvent):void
@@ -81,6 +122,7 @@ public class Juego3 extends MovieClip {
         }
 
         main = new MainJuego3();
+        main.ropa = _this.ropa;
         main.addEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
         MainJuego(main).prepararRecetas(listado);
         addChild(main);

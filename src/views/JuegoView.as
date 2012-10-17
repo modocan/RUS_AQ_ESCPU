@@ -81,7 +81,7 @@ public class JuegoView extends Sprite {
     {
         MovieClip(e.currentTarget).removeEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
 
-        // TODO lanzar evento para setear la nueva puntuación
+
 
         var _punt:String = e.datos as String;
 
@@ -110,6 +110,10 @@ public class JuegoView extends Sprite {
 
 
         }
+
+        var evento:JuegoEvent = new JuegoEvent(JuegoEvent.SET_PUNTUACION);
+        evento.datos = _punt;
+        _this.dispatchEvent(evento);
 
     }
 

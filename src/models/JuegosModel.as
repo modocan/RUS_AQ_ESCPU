@@ -14,6 +14,7 @@ public class JuegosModel extends Actor implements IJuegosModel{
 
     private var juegos:Array;
     private var juegoActual:Object = new Object();
+    private var posJuegoActual:uint = 0;
 
 
 
@@ -42,9 +43,57 @@ public class JuegosModel extends Actor implements IJuegosModel{
     }
 
 
+
+    public function parseaNota(_nota:String):Number
+    {
+        var resp:Number = 0;
+
+        switch (_nota)
+        {
+            case 'muy_deficiente':
+                    resp = 0;
+                break;
+
+            case '0':
+                resp = 0;
+                break;
+
+            case 'insuficiente':
+                resp = 1;
+                break;
+
+            case 'suficiente':
+                resp = 2;
+                break;
+
+            case 'bien':
+                resp = 3;
+                break;
+
+            case 'notable':
+                resp = 4;
+                break;
+
+            case 'sobresaliente':
+                resp = 5;
+                break;
+        }
+
+        return resp;
+    }
+
+
+    public function getPosJuegoActual():uint
+    {
+        return posJuegoActual;
+    }
+
+
+
     public function setJuegoActual(_data:uint):void
     {
         juegoActual = juegos[_data];
+        posJuegoActual = _data;
     }
 
 

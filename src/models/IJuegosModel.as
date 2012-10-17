@@ -14,5 +14,9 @@ public interface IJuegosModel {
     function setJuegoActual(_data:uint):void
     function getJuegoActual():Object
 
+    function parseaNota(_nota:String):Number
+
+    function getPosJuegoActual():uint
+
 }
 }

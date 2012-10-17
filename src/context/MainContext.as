@@ -1,5 +1,6 @@
 package context {
 
+import commands.ActualizaPuntuacionCommand;
 import commands.CargarJuegoCommand;
 import commands.CreaConfiguradorCommand;
 import commands.CrearLoginCokeCommand;
@@ -7,6 +8,7 @@ import commands.CrearSeleccionJuegosCommand;
 import commands.ElementoElegidoCommand;
 import commands.FBIniciadoCommand;
 import commands.GuardarAvatarCommand;
+import commands.InicioCommand;
 
 import events.JuegoEvent;
 
@@ -17,6 +19,7 @@ import flash.display.DisplayObjectContainer;
 	import com.hexagonstar.util.debug.Debug;
 
 import mediators.FinJuegoMediator;
+import mediators.HomeMediator;
 
 import mediators.JuegoMediator;
 import mediators.SeleccionJuegosMediator;
@@ -35,6 +38,7 @@ import services.IUsuarioService;
 import services.UsuarioService;
 
 import views.FinJuegoView;
+import views.HomeView;
 
 import views.JuegoView;
 import views.SeleccionJuegosView;
@@ -105,6 +109,8 @@ import views.SelectorView;
 			commandMap.mapEvent(UsuarioEvent.COKEID_OK, CrearSeleccionJuegosCommand, UsuarioEvent);
 			commandMap.mapEvent(JuegoEvent.SELECCION_JUEGO, CargarJuegoCommand, JuegoEvent);
 			commandMap.mapEvent(JuegoEvent.VOLVER, CrearSeleccionJuegosCommand, JuegoEvent);
+			commandMap.mapEvent(JuegoEvent.SET_PUNTUACION, ActualizaPuntuacionCommand, JuegoEvent);
+			commandMap.mapEvent(ConfiguradorEvent.INICIO_HOME, InicioCommand, ConfiguradorEvent);
 	    }
 	
 	    private function mapModels():void
@@ -133,6 +139,7 @@ import views.SelectorView;
 			mediatorMap.mapView(SeleccionJuegosView, SeleccionJuegosMediator);
 			mediatorMap.mapView(SelectorView, SelectorMediator);
 			mediatorMap.mapView(FinJuegoView, FinJuegoMediator);
+			mediatorMap.mapView(HomeView, HomeMediator);
 	    }
 	
 	}

@@ -6,10 +6,16 @@
  * To change this template use File | Settings | File Templates.
  */
 package mediators {
+import events.JuegoEvent;
+
 import org.robotlegs.mvcs.Mediator;
+
+import views.JuegoView;
 
 public class JuegoMediator extends Mediator{
 
+    [Inject]
+    public var vista:JuegoView;
 
     public function JuegoMediator() {
         super();
@@ -18,7 +24,14 @@ public class JuegoMediator extends Mediator{
 
     override public function onRegister():void
     {
+        eventMap.mapListener(vista,  JuegoEvent.SET_PUNTUACION, setPuntuacion);
+    }
 
+    private function setPuntuacion(e:JuegoEvent):void
+    {
+        var evento:JuegoEvent = new JuegoEvent(JuegoEvent.SET_PUNTUACION);
+        evento.datos = e.datos;
+        eventDispatcher.dispatchEvent(evento);
     }
 
 }

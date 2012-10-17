@@ -19,6 +19,10 @@ package models {
         function getIdTabla():String
 
         function setIdTabla(valor:String):void
+
+        function getCompartido():String
+
+        function setCompartido():void
 	
 	}
 }
