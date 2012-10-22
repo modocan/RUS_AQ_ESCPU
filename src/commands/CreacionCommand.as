@@ -33,6 +33,7 @@ public class CreacionCommand extends Command
     override public function execute():void
     {
         var fondo:FonoJuego = new FonoJuego();
+        fondo.y = 34;
         fondo.addEventListener(Event.ADDED_TO_STAGE, initFondo);
         contextView.addChild(fondo);
 
@@ -42,6 +43,7 @@ public class CreacionCommand extends Command
             FonoJuego(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initFondo);
 
             var interfaz:InterfazView = new InterfazView();
+            interfaz.y = 34;
             interfaz.addEventListener(Event.ADDED_TO_STAGE, initInterfaz);
             contextView.addChild(interfaz);
 
@@ -51,7 +53,9 @@ public class CreacionCommand extends Command
         {
             InterfazView(e.currentTarget).removeEventListener(Event.ADDED_TO_STAGE, initInterfaz);
 
-            contextView.addChildAt(new HomeView(), 1);
+            var hom:HomeView = new HomeView();
+            hom.y = 24;
+            contextView.addChildAt(hom, 1);
 
             //fb.init();
 

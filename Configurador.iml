@@ -48,7 +48,6 @@
     <orderEntry type="library" name="AS3" level="project" />
     <orderEntry type="library" name="AS3" level="application" />
     <orderEntry type="library" name="libs" level="application" />
-    <orderEntry type="library" name="docs" level="application" />
     <orderEntry type="module-library">
       <library type="flex">
         <properties id="531edaca-d2fb-4e9c-a2eb-a90d0a14d9ae" />

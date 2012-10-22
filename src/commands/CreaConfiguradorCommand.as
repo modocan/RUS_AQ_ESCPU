@@ -20,7 +20,9 @@ public class CreaConfiguradorCommand extends Command {
 
     override public function execute():void
     {
-        contextView.addChildAt(new MainView(), 1);
+        var main:MainView = new MainView();
+        main.y = 34;
+        contextView.addChildAt(main, 1);
     }
 
 

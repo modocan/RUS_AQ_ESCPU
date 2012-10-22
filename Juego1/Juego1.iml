@@ -5,22 +5,19 @@
       <configuration name="Juego1" pure-as="true" main-class="Juego1" output-file="juego1.swf" output-folder="$MODULE_DIR$/../bin-debug/juegos">
         <dependencies target-player="10.2">
           <entries>
-            <entry library-id="5642a4a7-8ad0-4bf4-a83e-b200cb5052b3">
+            <entry library-name="docs" library-level="application">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="bc0c592d-15e9-48b3-827b-6b1d43f628c2">
+            <entry library-id="91ccdac2-5cee-48ac-bf1b-b080f1a986d7">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="bf6a5087-e363-4d5a-a646-f6f928ad7b5b">
+            <entry library-id="dfd433dc-7d1c-4cc9-a24a-527a67735c31">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="e4d96a7c-e4e9-4a65-922d-27ed2bc733bd">
+            <entry library-name="libs" library-level="application">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="f8040be7-175d-4eb3-b932-9d085f9f511c">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="5bf21028-6c03-4abc-949c-4881940a79da">
+            <entry library-id="aa305f08-75f2-4fd0-8792-4160d227eb91">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -52,7 +49,7 @@
     <orderEntry type="library" name="src1" level="project" />
     <orderEntry type="module-library">
       <library type="flex">
-        <properties id="5642a4a7-8ad0-4bf4-a83e-b200cb5052b3" />
+        <properties id="91ccdac2-5cee-48ac-bf1b-b080f1a986d7" />
         <CLASSES>
           <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
         </CLASSES>
@@ -62,7 +59,7 @@
     </orderEntry>
     <orderEntry type="module-library">
       <library type="flex">
-        <properties id="bc0c592d-15e9-48b3-827b-6b1d43f628c2" />
+        <properties id="dfd433dc-7d1c-4cc9-a24a-527a67735c31" />
         <CLASSES>
           <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
         </CLASSES>
@@ -71,42 +68,13 @@
         <jarDirectory url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="docs" level="application" />
+    <orderEntry type="library" name="libs" level="application" />
     <orderEntry type="module-library">
       <library type="flex">
-        <properties id="bf6a5087-e363-4d5a-a646-f6f928ad7b5b" />
+        <properties id="aa305f08-75f2-4fd0-8792-4160d227eb91" />
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../libs" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../libs" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library type="flex">
-        <properties id="e4d96a7c-e4e9-4a65-922d-27ed2bc733bd" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../libs_juegos/assets_1.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library type="flex">
-        <properties id="f8040be7-175d-4eb3-b932-9d085f9f511c" />
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../src" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library type="flex">
-        <properties id="5bf21028-6c03-4abc-949c-4881940a79da" />
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../src/assets/juego1" />
+          <root url="jar://$MODULE_DIR$/src/assets_juego.swc!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -71,10 +71,11 @@ public class SeleccionJuegosView extends Sprite{
         SelectorView(_clip.getChildByName('juego1')).activa();
         trace('3');
         SelectorView(_clip.getChildByName('juego1')).addEventListener(MouseEvent.CLICK, clicSelector);
-        SelectorView(_clip.getChildByName('juego1')).indice = 2;
+        SelectorView(_clip.getChildByName('juego1')).indice = 0;
         trace('4');
         SelectorView(_clip.getChildByName('juego1')).setPuntuacion(puntuaciones[0] as String);
         trace('5');
+        SelectorView(_clip.getChildByName('juego1')).activa();
 
 
 
@@ -82,15 +83,17 @@ public class SeleccionJuegosView extends Sprite{
         {
             SelectorView(_clip.getChildByName('juego2')).buttonMode = true;
             SelectorView(_clip.getChildByName('juego2')).addEventListener(MouseEvent.CLICK, clicSelector);
-            SelectorView(_clip.getChildByName('juego2')).indice = 0;
+            SelectorView(_clip.getChildByName('juego2')).indice = 1;
             SelectorView(_clip.getChildByName('juego2')).setPuntuacion(puntuaciones[1] as String);
+            SelectorView(_clip.getChildByName('juego2')).activa();
 
             if(String(puntuaciones[1]) != '0')
             {
                 SelectorView(_clip.getChildByName('juego3')).buttonMode = true;
                 SelectorView(_clip.getChildByName('juego3')).addEventListener(MouseEvent.CLICK, clicSelector);
-                SelectorView(_clip.getChildByName('juego3')).indice = 1;
+                SelectorView(_clip.getChildByName('juego3')).indice = 2;
                 SelectorView(_clip.getChildByName('juego3')).setPuntuacion(puntuaciones[2] as String);
+                SelectorView(_clip.getChildByName('juego3')).activa();
             }
             else
             {

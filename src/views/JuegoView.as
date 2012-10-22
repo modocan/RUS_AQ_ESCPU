@@ -9,6 +9,8 @@ package views {
 import com.demonsters.debugger.MonsterDebugger;
 import com.greensock.TweenMax;
 
+import events.ConfiguradorEvent;
+
 import events.Juego1Event;
 
 import events.JuegoEvent;
@@ -22,6 +24,7 @@ import flash.display.Sprite;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.IOErrorEvent;
+import flash.events.ProgressEvent;
 import flash.net.URLRequest;
 
 import views.MunecoView;
@@ -52,9 +55,17 @@ public class JuegoView extends Sprite {
 
         var cargador:Loader = new Loader();
         cargador.contentLoaderInfo.addEventListener(Event.COMPLETE, cargaOK);
+        cargador.contentLoaderInfo.addEventListener(ProgressEvent.PROGRESS, progresoCarga);
         cargador.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, cargaKO);
         cargador.load(new URLRequest(_this.ruta));
         _this.addChild(cargador);
+    }
+
+    private function progresoCarga(e:ProgressEvent):void
+    {
+        var evento:ConfiguradorEvent = new ConfiguradorEvent(ConfiguradorEvent.PROGRESO_CARGA);
+        evento.datos = Math.ceil((Number(e.currentTarget.bytesLoaded) * 100)/Number(e.currentTarget.bytesTotal));
+        _this.dispatchEvent(evento);
     }
 
     private function cargaKO(e:IOErrorEvent):void
@@ -67,9 +78,9 @@ public class JuegoView extends Sprite {
 
     private function cargaOK(e:Event):void {
         MonsterDebugger.trace(this, '[CARGADO]');
-
-        MovieClip(e.currentTarget.content).ropa = ropa;
-        //MovieClip(e.currentTarget.content).setRopa(ropa);
+        _this.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.ELIMINA_PRECARGA));
+        //MovieClip(e.currentTarget.content).ropa = ropa;
+        MovieClip(e.currentTarget.content).setRopa(ropa);
         MovieClip(e.currentTarget.content).addEventListener(JuegoEvent.JUEGO_ACABADO, juegoAcabado);
         // TODO quitar precarga
 

@@ -27,6 +27,7 @@ import com.greensock.TweenMax;
 		private var categoriaAcargar:String;
 		private var _ancho:Number;
 		private var _alto:Number;
+        private var _sex:Boolean =false;
 		private var _pagSubmenuActual:uint;
 		private var pagsCategoria:Number;
 		private var ultimoElementoPag:uint;
@@ -156,9 +157,16 @@ import com.greensock.TweenMax;
 		public function cargarSubmenu(datos:Object):void{
 			//_arrElementos=datos
 
+            trace('LOS CARGO!');
+
+            MonsterDebugger.trace(this, '[DATOS ELEMENTOS]');
+            MonsterDebugger.trace(this, datos);
+
             llenarArrays(datos);
 
-			pintarElementos('Pel');
+            _sex = false;
+
+			pintarElementos('Pel', undefined);
 		}
 
         private function llenarArrays(_data:Object):void
@@ -176,6 +184,7 @@ import com.greensock.TweenMax;
 
 			var numCont:uint=0;
 			if(numC){
+                trace('paso 1');
 				ultimoElementoPag=numC+8;
 				primerElementoPag=numC;
 				if(pagActual==1){
@@ -188,9 +197,11 @@ import com.greensock.TweenMax;
 					flechaDer=false;
 				}
 			}else{
-				if(categoriaActual==cat){
+                trace('paso 2');
+				if(categoriaActual==cat && _sex){
 					return;
 				}
+                _sex = false;
 				categoriaActual=String(cat);
 				var textoOpc:TextField=_submenu.interfaz_submenu_mc.txt_opciones;	
 				textoOpc.alpha=0;
@@ -486,6 +497,11 @@ import com.greensock.TweenMax;
 				pintarElementos(categoriaActual,primerEl);
 			}
 		}
+
+        public function activaFinalizar():void
+        {
+
+        }
 		
 		public function entrar():void{
 			_this.visible = true;

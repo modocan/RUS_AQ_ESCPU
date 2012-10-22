@@ -79,14 +79,17 @@ public class MainJuego extends MovieClip {
 
         }
 
+        MonsterDebugger.trace(this, '[SUB ROPA]');
+        MonsterDebugger.trace(this, _this.ropa);
 
         personaje = new Muneco_mc();
         var perX:Number = MovieClip(_this.getChildByName('mesa')).x + 13;
         var perY:Number = MovieClip(_this.getChildByName('mesa')).y - ((personaje.height/2) - 30);
         personaje.config('1', perX, perY);
-        personaje.vestirTodosLosMunecos(_this.ropa, ['personaje_mc']);
+        personaje.vestirTodosLosMunecos(_this.ropa, ['personajeRespirando']);
         //personaje.vestirMuneco(_this.ropa[5], 'personaje_mc');
         personaje.scaleX = personaje.scaleY = 0.8;
+        personaje.respirando();
         personaje.buttonMode = false;
         addChildAt(personaje, _this.getChildIndex(_this.getChildByName('mesa'))-1);
         //addChild(personaje);
@@ -140,7 +143,7 @@ public class MainJuego extends MovieClip {
         TweenMax.to(fondoBlanco, 0.3, {alpha: 1, onComplete: function(){
 
             home = new HomeCocina();
-            home.x = (_this.width/2);
+            home.x = (_this.width/2) - 55;
             home.y = (_this.height/2);
             home.scaleX = home.scaleY = home.alpha = 0;
             home.comenzar.buttonMode = true;
@@ -159,7 +162,7 @@ public class MainJuego extends MovieClip {
         TweenMax.to(fondoBlanco, 0.3, {alpha: 1, onComplete: function(){
 
             receta = new Receta();
-            receta.x = (_this.width/2) - (receta.width/2);
+            receta.x = (_this.width/2) - ((receta.width/2) + 55);
             receta.y = (_this.height/2) - (receta.height/2);
             receta.addEventListener(Event.ADDED_TO_STAGE, initReceta);
             addChild(receta);
@@ -177,7 +180,7 @@ public class MainJuego extends MovieClip {
             _this.removeChild(home);
 
             receta = new Receta();
-            receta.x = (_this.width/2) - (receta.width/2);
+            receta.x = (_this.width/2) - ((receta.width/2) + 55);
             receta.y = (_this.height/2) - (receta.height/2);
             receta.addEventListener(Event.ADDED_TO_STAGE, initReceta);
             addChild(receta);
@@ -204,7 +207,7 @@ public class MainJuego extends MovieClip {
             var _anchoFinal:Number = receta.width * anchoReceta;
             var _altoFinal:Number = receta.height * altoReceta;
 
-            TweenMax.to(receta, 0.8, {x: _this.width - (_anchoFinal + 95) , y: _this.height - (_altoFinal + 35) , width: _anchoFinal, height: _altoFinal, onComplete: function(){
+            TweenMax.to(receta, 0.8, {x: _this.width - (_anchoFinal + 110) , y: _this.height - (_altoFinal + 50) , width: _anchoFinal, height: _altoFinal, onComplete: function(){
 
                 if(!releCrono)
                 {
@@ -238,7 +241,7 @@ public class MainJuego extends MovieClip {
             {
                 contadorRecetas ++;
                 barraPuntos.punto(2);
-                crono.pararCrono();
+                crono.pararCronoRecetas();
 
                 if(contadorRecetas < maximoRecetas )
                 {

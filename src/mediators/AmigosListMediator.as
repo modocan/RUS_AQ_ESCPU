@@ -1,6 +1,7 @@
 package mediators
 {
-	import com.hexagonstar.util.debug.Debug;
+import com.demonsters.debugger.MonsterDebugger;
+import com.hexagonstar.util.debug.Debug;
 	
 	import events.ConfiguradorEvent;
 	
@@ -25,7 +26,8 @@ package mediators
 		}
 		
 		public function pintarAmigos(e:ConfiguradorEvent):void{
-			Debug.trace('llego al puto mediator con: '+e.datos);
+			MonsterDebugger.trace(this, '[AMIGOS LIST]');
+			MonsterDebugger.trace(this, e.datos);
 			vista.pintarAmigos(e.datos.amigosQueJugaron,e.datos.todosLosAmigos);
 		}
 		

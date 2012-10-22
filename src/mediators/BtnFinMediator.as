@@ -25,7 +25,7 @@ package mediators
 
         private function guardar(e:ConfiguradorEvent):void
         {
-            eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.GUARDAR_AVATAR));
+            //eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.GUARDAR_AVATAR));
         }
 		
 		private function mostrarBtnFin(e:ConfiguradorEvent):void{

@@ -9,7 +9,7 @@ import context.MainContext;
 	
 	import org.robotlegs.core.IContext;
 	
-	[SWF(frameRate="24", height="800", width="810")]
+	[SWF(frameRate="24", height="820", width="810",backgroundColor="#FFFFFF")]
 	
 	public class Main extends MovieClip {
 		

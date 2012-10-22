@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="cargador">
+    <configurations>
+      <configuration name="cargador" pure-as="true" main-class="Cargador" output-file="main_escuela.swf" output-folder="$MODULE_DIR$/../bin-debug">
+        <dependencies target-player="10.2">
+          <entries>
+            <entry library-id="e37d21a7-d9a7-4a59-ab6b-6a09b31624cb">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="ba713635-a135-48ce-925f-4e085e67ebbb">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="f95b9243-bb12-4733-95c0-8c3cf1091445">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.5.1" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.5.1" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="e37d21a7-d9a7-4a59-ab6b-6a09b31624cb" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="ba713635-a135-48ce-925f-4e085e67ebbb" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="f95b9243-bb12-4733-95c0-8c3cf1091445" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../libs/cerdo_precarga.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

@@ -20,6 +20,11 @@ package events {
 		public static const NOMBRE_USUARIO:String = 'ConfiguradorEvent.NOMBRE_USUARIO';
 		public static const AMIGOS_QUE_JUGARON:String = 'ConfiguradorEvent.AMIGOS_QUE_JUGARON';
 		public static const INICIO_HOME:String = 'ConfiguradorEvent.INICIO_HOME';
+		public static const ACTIVA_FINALIZAR:String = 'ConfiguradorEvent.ACTIVA_FINALIZAR';
+		public static const CREA_PRECARGA:String = 'ConfiguradorEvent.CREA_PRECARGA';
+		public static const ELIMINA_PRECARGA:String = 'ConfiguradorEvent.ELIMINA_PRECARGA';
+		public static const PROGRESO_CARGA:String = 'ConfiguradorEvent.PROGRESO_CARGA';
+		public static const COMPARTIR_AVATAR:String = 'ConfiguradorEvent.COMPARTIR_AVATAR';
 
 		private var _datos:Object = new Object();
 			

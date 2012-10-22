@@ -7,6 +7,7 @@ use \libCokeId\HeaderApi;*/
 
 require (dirname(__FILE__).'/../php-library-for-cokeid/libcokeid/LibCokeId.php');
 
+include('ChromePhp.php');
 
 
 
@@ -29,7 +30,7 @@ if ($url!=''){
     $libCokeId->synchronizeSessionWithServer();
 
     $miData = $libCokeId->getUserLogged()->id;
-    //ChromePhp::log($libCokeId->getUserLogged());
+    ChromePhp::log($libCokeId->getUserLogged());
 
 
 

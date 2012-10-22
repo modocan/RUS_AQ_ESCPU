@@ -64,7 +64,7 @@ public class RecetaClase extends MovieClip {
         {
             if(obj.name != 'titulo' && obj.text == ing)
             {
-                trace('tachado');
+                trace('tachado de la receta');
                 //TweenMax.to(obj,  0.2, {tint: 0xFF0000});
                 var tachon:Tachon = new Tachon();
                 tachon.x = obj.x;

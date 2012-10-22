@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Pie</title>
+
+    <style type="text/css">
+
+
+        @font-face {
+            font-family: 'Fuente';
+            src: url('A_Font_with_Serifs.eot');
+            src: local('☺'), url('A_Font_with_Serifs.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h4
+        {
+            text-align: center;
+            font-family: 'Fuente';
+            font-size: 14px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        div.separador
+        {
+            margin: 0 auto;
+            clear: both;
+        }
+
+        #pie
+        {
+            position: relative;
+            background-image: url("imgs/fondo_pie.png");
+            width: 795px;
+            height: 135px;
+            margin: 0 auto;
+            padding-top: 1px;
+            overflow: hidden;
+        }
+
+
+        #enlaces_pie
+        {
+            overflow: auto;
+            width: 181px;
+            float: left;
+            margin-left: 140px;
+        }
+
+
+            #enlaces_pie a:link,
+            #enlaces_pie a:visited,
+            #enlaces_pie a:hover
+            {
+                text-decoration: none;
+                text-indent: -10000px;
+                display: block;
+                float: left;
+                margin-right: 10px;
+                width: 49px;
+                height: 55px;
+            }
+
+        #com_fb
+        {
+            background-image: url("imgs/comp_facebook.png");
+        }
+
+        #com_twt
+        {
+            background-image: url("imgs/comp_twitter.png");
+        }
+
+        #com_tnt
+        {
+            background-image: url("imgs/comp_tuenti.png");
+        }
+
+        a.enlace_flotante:link,
+        a.enlace_flotante:hover,
+        a.enlace_flotante:visited
+        {
+            display: block;
+            float: left;
+            text-indent: -10000px;
+        }
+
+            a#flota_aquarius
+            {
+                background-image: url("imgs/logo_aqua.png");
+                width: 154px;
+                height: 100px;
+                margin-top: -30px;
+                margin-left: 20px;
+            }
+
+            a#flota_coca
+            {
+                background-image: url("imgs/logo_cocacola.png");
+                width: 69px;
+                height: 25px;
+                margin-top: 10px;
+                float: right;
+                margin-right: 50px;
+            }
+
+        #sep_central
+        {
+            margin-top: -15px;
+        }
+
+        p.centrado
+        {
+            font-family: Arial;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+        }
+
+            p.centrado a:link,
+            p.centrado a:visited
+            {
+                color: #333;
+                text-decoration: none;
+            }
+
+            p.centrado a:hover
+            {
+                text-decoration: underline;
+            }
+
+            p.centrado span
+            {
+                font-family: Arial;
+                font-size: 9px;
+                color: #333;
+            }
+
+        #sub_pie
+        {
+            position: relative;
+            top: -16px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="pie">
+
+    <div class="separador">
+
+        <h4>compartir:</h4>
+
+    </div>
+
+    <div id="sep_central" class="separador">
+
+        <a id="flota_aquarius" class="enlace_flotante" href="#">Aquarius</a>
+
+        <div id="enlaces_pie">
+
+            <a id="com_fb" href="#">FB</a>
+            <a id="com_twt" href="#">TWT</a>
+            <a id="com_tnt" href="#">TNT</a>
+
+        </div>
+
+        <a id="flota_coca" class="enlace_flotante" href="#">Aquarius</a>
+
+    </div>
+
+    <div id="sub_pie" class="separador">
+
+        <p class="centrado">
+
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

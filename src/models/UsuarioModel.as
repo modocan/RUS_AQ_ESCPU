@@ -85,7 +85,8 @@ import org.robotlegs.mvcs.Actor;
             this.compartido = datos.COMPARTIDO as String;
             this.id_tabla = datos.id as String;
 
-            if(datos.id_coke)
+            // TODO descomentar esto para usar la comprobación del CokeID
+            /*if(datos.id_coke)
             {
                 MonsterDebugger.trace(this, '[1]');
                 this.login_cocacola = datos.id_coke as String;
@@ -95,7 +96,10 @@ import org.robotlegs.mvcs.Actor;
             {
                 MonsterDebugger.trace(this, '[2]');
                 dispatch(new UsuarioEvent(UsuarioEvent.COKEID_KO));
-            }
+            }*/
+
+            // TODO comentar esto para usar la comprobación del CokeID
+            dispatch(new UsuarioEvent(UsuarioEvent.COKEID_OK));
         }
 	
 	}

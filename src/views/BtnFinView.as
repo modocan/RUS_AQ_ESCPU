@@ -1,6 +1,8 @@
 package views
 {
-	import com.greensock.TweenMax;
+import assets.BtnGenerico;
+
+import com.greensock.TweenMax;
 	import com.greensock.easing.*;
 	import com.hexagonstar.util.debug.Debug;
 	
@@ -10,7 +12,7 @@ package views
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	
-	public class BtnFinView extends MovieClip
+	public class BtnFinView extends BtnGenerico
 	{
 		private var _this:BtnFinView;
 		private var _btn_fin:Btn_fin_mc;
@@ -59,7 +61,7 @@ package views
 			_this.mouseEnabled = false;
 			var evento:ConfiguradorEvent = new ConfiguradorEvent(ConfiguradorEvent.GUARDAR_AVATAR);
 			//evento.datos.volver = '';
-			_this.dispatchEvent(evento);
+			//_this.dispatchEvent(evento);
 		}
 		
 		public function entrar():void{

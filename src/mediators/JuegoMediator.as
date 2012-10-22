@@ -6,6 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 package mediators {
+import events.ConfiguradorEvent;
 import events.JuegoEvent;
 
 import org.robotlegs.mvcs.Mediator;
@@ -25,6 +26,20 @@ public class JuegoMediator extends Mediator{
     override public function onRegister():void
     {
         eventMap.mapListener(vista,  JuegoEvent.SET_PUNTUACION, setPuntuacion);
+        eventMap.mapListener(vista,  ConfiguradorEvent.ELIMINA_PRECARGA, eliminaPrecarga);
+        eventMap.mapListener(vista,  ConfiguradorEvent.PROGRESO_CARGA, progresoCarga);
+    }
+
+    private function progresoCarga(e:ConfiguradorEvent):void
+    {
+        var evento:ConfiguradorEvent = new ConfiguradorEvent(ConfiguradorEvent.PROGRESO_CARGA);
+        evento.datos = e.datos;
+        eventDispatcher.dispatchEvent(evento);
+    }
+
+    private function eliminaPrecarga(e:ConfiguradorEvent):void
+    {
+        eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.ELIMINA_PRECARGA));
     }
 
     private function setPuntuacion(e:JuegoEvent):void

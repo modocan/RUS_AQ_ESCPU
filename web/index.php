@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://apps.facebook.com/pruebas-papaditas/" />
     <meta property="og:image" content="https://aquarius.cocacola.es/appsaquarius/escuela/imgs/90x90.jpg" />
     <meta property="og:site_name" content="Escuela de pueblo Aquarius" />
-	<meta property="fb:app_id" content="290061231098321" />
+	<meta property="fb:app_id" content="273344839447085" />
     <meta name="language" content="es" />
 	<meta name="description" content="Escuela de pueblo Aquarius" />
 	<meta name="keywords" content="Escuela de pueblo Aquarius" />
@@ -27,8 +27,11 @@
 			}	
 			
 			#imagen{
-				width: 810px;
+				width: 790px;
 				height: 800px;
+                position: relative;
+                z-index: 2;
+                margin-top: 20px;
 			}
 
 
@@ -41,6 +44,7 @@
                 left: 0;
                 background-color: #fff;
                 display: none;
+                z-index: 3;
             }
 
                 #frame iframe
@@ -48,9 +52,153 @@
                     width: 100%;
                     height: 100%;
                 }
-			
-			
-		</style>
+
+
+
+              @font-face {
+                  font-family: 'Fuente';
+                  src: url('A_Font_with_Serifs.eot');
+                  src: local('☺'), url('https://aquariustest.cocacola.es/appsaquarius/escuela/A_Font_with_Serifs.ttf') format('truetype');
+                  font-weight: normal;
+                  font-style: normal;
+              }
+
+              h4
+              {
+                  text-align: center;
+                  font-family: 'Fuente';
+                  font-size: 14px;
+                  color: #333;
+                  text-transform: uppercase;
+              }
+
+              div.separador
+              {
+                  margin: 0 auto;
+                  clear: both;
+              }
+
+              #pie
+              {
+                  position: relative;
+                  background-image: url("https://aquariustest.cocacola.es/appsaquarius/escuela/imgs/fondo_pie.png");
+                  width: 795px;
+                  height: 135px;
+                  margin: 0 auto;
+                  padding-top: 1px;
+                  overflow: hidden;
+                  display: none;
+                  top: -30px;
+                  z-index: 1;
+              }
+
+
+              #enlaces_pie
+              {
+                  overflow: auto;
+                  width: 181px;
+                  float: left;
+                  margin-left: 140px;
+              }
+
+
+              #enlaces_pie a:link,
+              #enlaces_pie a:visited,
+              #enlaces_pie a:hover
+              {
+                  text-decoration: none;
+                  text-indent: -10000px;
+                  display: block;
+                  float: left;
+                  margin-right: 10px;
+                  width: 49px;
+                  height: 55px;
+              }
+
+              #com_fb
+              {
+                  background-image: url("https://aquariustest.cocacola.es/appsaquarius/escuela/imgs/comp_facebook.png");
+              }
+
+              #com_twt
+              {
+                  background-image: url("https://aquariustest.cocacola.es/appsaquarius/escuela/imgs/comp_twitter.png");
+              }
+
+              #com_tnt
+              {
+                  background-image: url("https://aquariustest.cocacola.es/appsaquarius/escuela/imgs/comp_tuenti.png");
+              }
+
+              a.enlace_flotante:link,
+              a.enlace_flotante:hover,
+              a.enlace_flotante:visited
+              {
+                  display: block;
+                  float: left;
+                  text-indent: -10000px;
+              }
+
+              a#flota_aquarius
+              {
+                  background-image: url("https://aquariustest.cocacola.es/appsaquarius/escuela/imgs/logo_aqua.png");
+                  width: 154px;
+                  height: 100px;
+                  margin-top: -30px;
+                  margin-left: 20px;
+              }
+
+              a#flota_coca
+              {
+                  background-image: url("https://aquariustest.cocacola.es/appsaquarius/escuela/imgs/logo_cocacola.png");
+                  width: 69px;
+                  height: 25px;
+                  margin-top: 10px;
+                  float: right;
+                  margin-right: 50px;
+              }
+
+              #sep_central
+              {
+                  margin-top: -15px;
+              }
+
+              p.centrado
+              {
+                  font-family: Arial;
+                  font-size: 12px;
+                  color: #333;
+                  text-align: center;
+              }
+
+              p.centrado a:link,
+              p.centrado a:visited
+              {
+                  color: #333;
+                  text-decoration: none;
+              }
+
+              p.centrado a:hover
+              {
+                  text-decoration: underline;
+              }
+
+              p.centrado span
+              {
+                  font-family: Arial;
+                  font-size: 9px;
+                  color: #333;
+              }
+
+              #sub_pie
+              {
+                  position: relative;
+                  top: -16px;
+              }
+
+
+
+    </style>
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
@@ -58,9 +206,9 @@
 
     <script type="text/javascript">
 
-        var APP_ID = "290061231098321";
-		var REDIRECT_URI = "https://apps.facebook.com/pruebas-papaditas/";
-		var PERMS = "publish_stream";
+        var APP_ID = "273344839447085";
+		var REDIRECT_URI = "https://apps.facebook.com/escuela_aquarius/";
+		var PERMS = "publish_stream,user_photos,friends_photos";
 
 
         $(function(){
@@ -73,10 +221,19 @@
                 oauth		 : true
             });
 
+            $('#comp_fb').bind('click', clicComparteFB);
+
             //FB.Canvas.setSize({ width: 810, height: 800 });
             FB.getLoginStatus(handleLoginStatus);
 
         });
+
+          function colocaPie()
+          {
+              $('#pie').css({display: 'block'});
+              $('#com_fb').bind('click', clicComparteFB);
+          }
+
 		  
           function handleLoginStatus(response) {
 
@@ -87,7 +244,7 @@
               else
               {
 
-                  var _swf = "EscuelaPueblo.swf?<?php echo(time()) ?>";
+                  var _swf = "https://aquariustest.cocacola.es/appsaquarius/escuela/main_escuela.swf?<?php echo(time()) ?>";
                   var params = {};
 
                   params.wmode = "transparent";
@@ -98,7 +255,8 @@
                   if (response.authResponse) { //Show the SWF
 
                       $('#imagen').append('<h1>You need at least Flash Player 10.0 to view this page.</h1><p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>');
-                      swfobject.embedSWF(_swf, "imagen", "810", "800", "10.0", null, params, {name: "imagen"})
+                      swfobject.embedSWF(_swf, "imagen", "810", "800", "10.0", null, params, {name: "imagen", wmode: "transparent"}) ;
+                      fl = document.getElementById('imagen');
 
                   } else { //ask the user to login
 
@@ -144,28 +302,78 @@
 
         function pideAmigos()
         {
-            FB.api('me/friends', function(res){
-                thisMovie("imagen").reciboTodosLosAmigos(res);
-                //console.log('PHP - pideAmigos');
-            });
+
         }
 
 
       function cargarAmigos(){
           var respuesta;
-          FB.api({
-                method: 'friends.getAppUsers',
-                urls: 'facebook.com,developers.facebook.com'
-              },
-              function(response) {
-                  respuesta=response;
-                  thisMovie("imagen").sendToActionScript(respuesta);
-                  //console.log('PHP - cargarAmigos');
-              }
-          );
+          var resp2;
+
+          FB.api('me/friends', function(res){
+
+              resp2 = res;
+
+
+              FB.api({
+                    method: 'friends.getAppUsers',
+                    urls: 'facebook.com,developers.facebook.com'
+                  },
+                  function(response) {
+                      respuesta=response;
+                      thisMovie("imagen").reciboTodosLosAmigos(resp2, respuesta);
+                      console.log('PHP - cargarAmigos');
+                      console.log(respuesta);
+                  }
+              );
+
+          });
 
       }
 
+        function compartirAvatar(nombre)
+        {
+            FB.ui({
+
+                method: 'feed',
+                name: 'Escuela de Pueblo',
+                link: REDIRECT_URI,
+                picture: 'https://aquariustest.cocacola.es/appsaquarius/escuela/img_fb.png',
+                caption: 'Compartiendo',
+                description: 'Estoy compartiendo la foto de mi avatar'
+
+            }, function(resp){
+
+                console.log(resp);
+
+                if(resp.post_id)
+                {
+                    thisMovie("imagen").publicarAvatar();
+                    //thisMovie("imagen").publicarAvatar();
+                }
+
+            });
+        }
+
+        function clicComparteFB()
+        {
+            $('#comp_fb').unbind('click', clicComparteFB);
+
+            FB.ui({
+
+                method: 'feed',
+                name: 'Escuela de Pueblo',
+                link: REDIRECT_URI,
+                picture: 'https://aquariustest.cocacola.es/appsaquarius/escuela/img_fb.png',
+                caption: 'Compartiendo',
+                description: 'Estoy compartiendo la App'
+
+            });
+
+            $('#comp_fb').bind('click', clicComparteFB);
+
+            return false;
+        }
 
         function compartirJuego()
         {
@@ -215,6 +423,49 @@
 <body>
 <div id="fb-root"></div>
 <div id="imagen"></div>
+<div id="pie">
+
+    <div class="separador">
+
+        <h4>compartir:</h4>
+
+    </div>
+
+    <div id="sep_central" class="separador">
+
+        <a id="flota_aquarius" class="enlace_flotante" href="#">Aquarius</a>
+
+        <div id="enlaces_pie">
+
+            <a id="com_fb" href="#">FB</a>
+            <a id="com_twt" href="#">TWT</a>
+            <a id="com_tnt" href="#">TNT</a>
+
+        </div>
+
+        <a id="flota_coca" class="enlace_flotante" href="#">Aquarius</a>
+
+    </div>
+
+    <div id="sub_pie" class="separador">
+
+        <p class="centrado">
+
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+            <span> | </span>
+            <a href="#">Enlace</a>
+
+        </p>
+
+    </div>
+
+</div>
 <div id="frame">
 
     <iframe src="https://aquariustest.cocacola.es/appsaquarius/escuela/login.php" rel=""></iframe>

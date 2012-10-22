@@ -39,7 +39,13 @@ package views
 			_posYIni = _this.y;
 		}
 		
-		public function entrar():void{
+		public function entrar2():void{
+            _this.visible = true;
+            TweenMax.to(_this, 0.7, {y:_posY, delay:1.5, ease:Expo.easeOut});
+            //setListeners();
+        }
+
+        public function entrar():void{
 			_this.visible = true;
 			TweenMax.to(_this, 0.7, {y:_posY, delay:1.5, ease:Expo.easeOut});
 			setListeners();

@@ -1,10 +1,14 @@
 package services {
 
 import com.demonsters.debugger.MonsterDebugger;
-	import com.hexagonstar.util.debug.Debug;
+import com.facebook.graph.Facebook;
+import com.facebook.graph.data.FacebookSession;
+import com.hexagonstar.util.debug.Debug;
 	
 	import events.ConfiguradorEvent;
 import events.UsuarioEvent;
+
+import flash.display.Bitmap;
 
 import flash.display.MovieClip;
 	import flash.events.Event;
@@ -26,6 +30,8 @@ public class FBService extends Actor implements IFBService {
 
     private var usuario:Object;
     private var amigosQjugaron:Array;
+    private var at:String;
+    private var miAvatarCompartir:Bitmap;
     private const APP_ID:String = '430270773696817';
 
     public function FBService(){
@@ -35,6 +41,12 @@ public class FBService extends Actor implements IFBService {
         Security.loadPolicyFile('http://profile.ak.fbcdn.net/crossdomain.xml');
         Security.allowDomain('http://profile.ak.fbcdn.net');
         Security.allowInsecureDomain('http://profile.ak.fbcdn.net');
+
+        Security.loadPolicyFile('https://api.facebook.com/crossdomain.xml');
+        Security.loadPolicyFile('https://profile.ak.fbcdn.net/crossdomain.xml');
+        Security.allowDomain('http://profile.ak.fbcdn.net');
+        Security.allowInsecureDomain('http://profile.ak.fbcdn.net');
+        Security.loadPolicyFile('http://s.ytimg.com/crossdomain.xml');
     }
 
 
@@ -44,14 +56,34 @@ public class FBService extends Actor implements IFBService {
         ExternalInterface.addCallback('reciboDatos', recibeUsuario);
         ExternalInterface.addCallback("sendToActionScript", AmigosQueYaHanJugado);
         ExternalInterface.addCallback("reciboTodosLosAmigos", todosLosAmigos);
+        //ExternalInterface.addCallback("publicarAvatar", publicarAvatar);
         ExternalInterface.call('conectaFB');
         ExternalInterface.call('cargarAmigos');
-
     }
 
 
     private function recibeUsuario(success:Object):void
     {
+        Facebook.init('273344839447085', initComp);
+
+
+
+        function initComp(success:Object, fail:Object)
+        {
+            if(success)
+            {
+                MonsterDebugger.trace(this, '[FB OK]');
+                MonsterDebugger.trace(this, success);
+
+                at = success.accessToken as String;
+            }
+            else if(fail)
+            {
+                MonsterDebugger.trace(this, '[FB KO]');
+                MonsterDebugger.trace(this, fail);
+            }
+        }
+
         Debug.trace('[Respuesta JS]');
 
         Debug.traceObj(success);
@@ -78,7 +110,63 @@ public class FBService extends Actor implements IFBService {
     }
 
 
+    public function comparteAvatar(_data:Object):void
+    {
+        MonsterDebugger.trace(this, 'COMPARTO AVTR');
+        var parametros:Object = new Object();
+        parametros.message = "Prueba";
+        parametros.image = _data.foto as Bitmap;
+        parametros.fileName = "image"+Math.round(Math.random() * 9999999999)+".jpg";
+        parametros.access_token = at;
 
+
+
+        Facebook.api("me/photos",fotoCompartida,parametros,"POST");
+
+        function fotoCompartida(_suc:Object, _fail:Object)
+        {
+            if(_suc)
+            {
+                MonsterDebugger.trace(this, '[FOTO OK]');
+                MonsterDebugger.trace(this, _suc);
+            }
+            else if(_fail)
+            {
+                MonsterDebugger.trace(this, '[FOTO KO]');
+                MonsterDebugger.trace(this, _fail);
+            }
+        }
+    }
+
+
+    public function publicarAvatar():void
+    {
+
+        MonsterDebugger.trace(this, 'COMPARTO AVTR');
+        var parametros:Object = new Object();
+        parametros.message = "Prueba";
+        parametros.image = miAvatarCompartir;
+        parametros.fileName = "image"+Math.round(Math.random() * 9999999999)+".jpg";
+        parametros.access_token = at;
+
+
+
+        Facebook.api("me/photos",fotoCompartida,parametros,"POST");
+
+        function fotoCompartida(_suc:Object, _fail:Object)
+        {
+            if(_suc)
+            {
+                MonsterDebugger.trace(this, '[FOTO OK]');
+                MonsterDebugger.trace(this, _suc);
+            }
+            else if(_fail)
+            {
+                MonsterDebugger.trace(this, '[FOTO KO]');
+                MonsterDebugger.trace(this, _fail);
+            }
+        }
+    }
 
 
     public function comparte(texto:String):void
@@ -110,10 +198,9 @@ public class FBService extends Actor implements IFBService {
         }*/
     }
 
-    private function todosLosAmigos(a:Object):void{
+    private function todosLosAmigos(a:Object, b:Array):void{
         var todosLosAmigos:Object=a;
-        //Debug.inspect(todosLosAmigos);
-        Debug.trace('Vino a todosLosAmigos');
+        amigosQjugaron = b;
 
         var evento:ConfiguradorEvent = new ConfiguradorEvent(ConfiguradorEvent.AMIGOS_QUE_JUGARON);
         evento.datos.amigosQueJugaron = amigosQjugaron;

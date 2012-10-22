@@ -6,11 +6,16 @@
  * To change this template use File | Settings | File Templates.
  */
 package views {
+import assets.BtnGenerico;
+
 import com.greensock.TweenMax;
 
 import events.JuegoEvent;
 
+import flash.display.Bitmap;
+
 import flash.display.DisplayObject;
+import flash.display.MovieClip;
 
 import flash.display.Sprite;
 import flash.events.Event;
@@ -22,6 +27,7 @@ public class SelectorView extends Sprite
 {
     private var _this:SelectorView;
     private var candado:Candado;
+    private var candado_puesto:Boolean = false;
 
     public var indice:uint = 0;
 
@@ -29,8 +35,10 @@ public class SelectorView extends Sprite
     {
         super();
         _this = this;
-        //_this.mouseChildren = false;
+        _this.mouseChildren = false;
         _this.addEventListener(Event.ADDED_TO_STAGE, init);
+        _this.addEventListener(MouseEvent.MOUSE_OVER, over);
+        _this.addEventListener(MouseEvent.MOUSE_OUT, out);
     }
 
     private function init(e:Event):void
@@ -41,8 +49,27 @@ public class SelectorView extends Sprite
     }
 
 
+    public function activado():void
+    {
+
+    }
+
+    private function out(e:MouseEvent):void
+    {
+        TweenMax.to(MovieClip(_this.getChildByName('reflejo')), 0.3, {alpha: 1});
+    }
+
+    private function over(e:MouseEvent):void
+    {
+        TweenMax.to(MovieClip(_this.getChildByName('reflejo')), 0.3, {alpha: 0.4});
+    }
+
+
     public function capa():void
     {
+        _this.removeEventListener(MouseEvent.MOUSE_OVER, over);
+        _this.removeEventListener(MouseEvent.MOUSE_OUT, out);
+        candado_puesto = true;
         candado= new Candado();
         addChild(candado);
     }
@@ -60,6 +87,9 @@ public class SelectorView extends Sprite
 
             var diploma:Sprite = new Sprite();
             diploma = dameDiploma(_data) as Sprite;
+            diploma.x = (diploma.width/2) - 45;
+            diploma.y = (diploma.height/2) - 20;
+            diploma.scaleX = diploma.scaleY = 0.65;
             //diploma.alpha = 0;
             //diploma.scaleX = diploma.scaleY = 1.2;
             //diploma.addEventListener(Event.ADDED_TO_STAGE, initDiploma);

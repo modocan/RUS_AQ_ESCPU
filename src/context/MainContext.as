@@ -2,13 +2,17 @@ package context {
 
 import commands.ActualizaPuntuacionCommand;
 import commands.CargarJuegoCommand;
+import commands.CompartirAvatarCommand;
 import commands.CreaConfiguradorCommand;
+import commands.CreaPrecargaCommand;
 import commands.CrearLoginCokeCommand;
 import commands.CrearSeleccionJuegosCommand;
 import commands.ElementoElegidoCommand;
+import commands.EliminaPrecargaCommand;
 import commands.FBIniciadoCommand;
 import commands.GuardarAvatarCommand;
 import commands.InicioCommand;
+import commands.ProgresoCargaCommand;
 
 import events.JuegoEvent;
 
@@ -111,6 +115,10 @@ import views.SelectorView;
 			commandMap.mapEvent(JuegoEvent.VOLVER, CrearSeleccionJuegosCommand, JuegoEvent);
 			commandMap.mapEvent(JuegoEvent.SET_PUNTUACION, ActualizaPuntuacionCommand, JuegoEvent);
 			commandMap.mapEvent(ConfiguradorEvent.INICIO_HOME, InicioCommand, ConfiguradorEvent);
+			commandMap.mapEvent(ConfiguradorEvent.CREA_PRECARGA, CreaPrecargaCommand, ConfiguradorEvent);
+			commandMap.mapEvent(ConfiguradorEvent.ELIMINA_PRECARGA, EliminaPrecargaCommand, ConfiguradorEvent);
+			commandMap.mapEvent(ConfiguradorEvent.PROGRESO_CARGA, ProgresoCargaCommand, ConfiguradorEvent);
+			commandMap.mapEvent(ConfiguradorEvent.COMPARTIR_AVATAR, CompartirAvatarCommand, ConfiguradorEvent);
 	    }
 	
 	    private function mapModels():void

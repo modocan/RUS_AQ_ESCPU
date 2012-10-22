@@ -29,6 +29,11 @@ public class ElementoElegidoCommand extends Command{
     override public function execute():void
     {
         avatar.setElemento(ev.datos);
+
+        if(avatar.getBoca().name != 'nada' && avatar.getOjos().name != 'nada')
+        {
+            eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.ACTIVA_FINALIZAR));
+        }
     }
 
 }

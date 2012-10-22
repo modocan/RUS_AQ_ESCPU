@@ -27,7 +27,28 @@ package mediators
 			*/
 			
 			//eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.CARGAR_AMIGOS));
+            eventMap.mapListener(eventDispatcher, ConfiguradorEvent.ACTIVA_FINALIZAR, activaFinalizar);
+            eventMap.mapListener(vista, ConfiguradorEvent.GUARDAR_AVATAR, guardar);
+            eventMap.mapListener(vista, ConfiguradorEvent.COMPARTIR_AVATAR, compartirAvatar);
 		}
+
+        private function compartirAvatar(e:ConfiguradorEvent):void
+        {
+            var evento:ConfiguradorEvent = new ConfiguradorEvent(ConfiguradorEvent.COMPARTIR_AVATAR);
+            evento.datos = e.datos;
+            eventDispatcher.dispatchEvent(evento);
+        }
+
+
+        private function activaFinalizar(e:ConfiguradorEvent):void
+        {
+            vista.activaFinalizar();
+        }
+
+        private function guardar(e:ConfiguradorEvent):void
+        {
+            eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.GUARDAR_AVATAR));
+        }
 		
 		
 	}

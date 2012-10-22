@@ -8,6 +8,8 @@
 package commands {
 import com.demonsters.debugger.MonsterDebugger;
 
+import events.ConfiguradorEvent;
+
 import events.JuegoEvent;
 
 import models.IAvatarModel;
@@ -39,6 +41,8 @@ public class CargarJuegoCommand extends Command{
         // TODO setear el juego que cargo y cargarlo
 
         juegos.setJuegoActual(uint(ev.datos));
+        MonsterDebugger.trace(this, '[JUEGO QUE CARGO]');
+        MonsterDebugger.trace(this, juegos.getJuegoActual());
 
         if(contextView.numChildren > 2)
         {
@@ -54,7 +58,12 @@ public class CargarJuegoCommand extends Command{
         MonsterDebugger.trace(this, '[AVATAR]');
         MonsterDebugger.trace(this, avatar);
 
-        contextView.addChildAt(new JuegoView(juegos.getJuegoActual().ruta as String, lista_ropa), 1);
+        eventDispatcher.dispatchEvent(new ConfiguradorEvent(ConfiguradorEvent.CREA_PRECARGA));
+
+        var juego:JuegoView = new JuegoView(juegos.getJuegoActual().ruta as String, lista_ropa);
+        juego.y = 34;
+
+        contextView.addChildAt(juego, 1);
 
     }
 

@@ -44,7 +44,9 @@ public class CrearSeleccionJuegosCommand extends Command{
         MonsterDebugger.trace(this, puntos);
 
 
-        contextView.addChildAt(new SeleccionJuegosView(puntos), 1);
+        var sele:SeleccionJuegosView = new SeleccionJuegosView(puntos);
+        sele.y = 34;
+        contextView.addChildAt(sele, 1);
     }
 
 

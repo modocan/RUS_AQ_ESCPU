@@ -5,7 +5,7 @@ use \libCokeId\HeaderApi;*/
 
 //use \libCokeId\LibCokeId;
 
-//require ('ChromePhp.php');
+require ('ChromePhp.php');
 require (dirname(__FILE__).'/../php-library-for-cokeid/libcokeid/LibCokeId.php');
 
 
@@ -24,7 +24,7 @@ else{
 
 
 
-$url = '';
+
 
 if (isset($_SESSION['last_url_oauth'])){
     $url = $_SESSION['last_url_oauth']."?".$_SERVER['QUERY_STRING'];
@@ -32,13 +32,15 @@ if (isset($_SESSION['last_url_oauth'])){
     $url = "/?".$_SERVER['QUERY_STRING'];
 }
 
+ChromePhp::log($url);
+
 
 if ($url!=''){
     $libCokeId = new \libCokeId\LibCokeId();
-    $libCokeId->synchronizeSessionWithServer();
+    //$libCokeId->synchronizeSessionWithServer();
 
     $miData = $libCokeId->getUserLogged()->id;
-    //ChromePhp::log($libCokeId->getUserLogged());
+    ChromePhp::log($libCokeId->getUserLogged());
 
 
 

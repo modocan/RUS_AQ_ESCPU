@@ -1,6 +1,8 @@
 package views
 {
-	import com.greensock.TweenMax;
+import assets.BtnGenerico;
+
+import com.greensock.TweenMax;
 	import com.greensock.easing.*;
 	import com.hexagonstar.util.debug.Debug;
 	
@@ -10,7 +12,7 @@ package views
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	
-	public class BtnVolverView extends MovieClip
+	public class BtnVolverView extends BtnGenerico
 	{
 		private var _this:BtnVolverView;
 		private var _btn_volver:Btn_volver_mc;
@@ -43,6 +45,16 @@ package views
 			_this.y = stage.stageHeight + _this.height;
 			_posYIni = _this.y;
 		}
+
+        public function capa():void
+        {
+            _this.removeEventListener(MouseEvent.CLICK,onClick);
+        }
+
+        public function activa():void
+        {
+            _this.addEventListener(MouseEvent.CLICK,onClick);
+        }
 		
 		private function rollOver(e:MouseEvent):void{
 			//TweenMax.to(_this._personaje.texto_txt, 0.7, {alpha:1, ease:Expo.easeOut});

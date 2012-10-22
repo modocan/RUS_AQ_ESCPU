@@ -25,6 +25,8 @@ import com.hexagonstar.util.debug.Debug;
 			eventMap.mapListener(eventDispatcher, ConfiguradorEvent.CLICK_EN_CATEGORIA, clickEnCategoria);
 			eventMap.mapListener(eventDispatcher, ConfiguradorEvent.VOLVER, volver);
 		}
+
+
 		
 		private function mostrarSubMenuCategorias(e:ConfiguradorEvent):void{
 			Debug.trace('detectoEvento submenu');

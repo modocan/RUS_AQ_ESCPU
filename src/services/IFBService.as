@@ -4,6 +4,8 @@ package services {
 	    function init():void
 					
 		function comparte(texto:String):void
+
+        function comparteAvatar(_data:Object):void
 	
 	}
 }
