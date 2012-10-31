@@ -77,9 +77,12 @@ public class AmigosListView extends MovieClip{
 
 			}
 
+            interfaz.flechaDer.alpha=0.5;
+            interfaz.flechaIzq.alpha=0.5;
+
             if(cantidadAmigos >5){
-                interfaz.flechaDer.visible=true;
-                interfaz.flechaIzq.visible=true;
+                interfaz.flechaDer.alpha=1;
+                interfaz.flechaIzq.alpha=1;
 
                 interfaz.flechaDer.addEventListener(MouseEvent.MOUSE_OVER, moverFotos);
                 interfaz.flechaIzq.addEventListener(MouseEvent.MOUSE_OVER, moverFotos);

@@ -37,20 +37,21 @@ public class InicioCommand extends Command {
         {
             contextView.removeChildAt(1);
         }
-        fb.init();
-
-        /*var conf:MainView = new MainView();
+        //fb.init();
+        /*
+        var conf:MainView = new MainView();
         conf.y = 34;
-        contextView.addChildAt(conf, 1);*/
+        contextView.addChildAt(conf, 1);
+        */
 
-        /*var puntos:Array = new Array();
+        var puntos:Array = new Array();
         puntos = [juegos.getJuegos()[0].puntos, juegos.getJuegos()[1].puntos, juegos.getJuegos()[2].puntos];
 
 
         var sele:SeleccionJuegosView = new SeleccionJuegosView(puntos);
         sele.y = 34;
 
-        contextView.addChildAt(sele, 1);*/
+        contextView.addChildAt(sele, 1);
 
     }
 

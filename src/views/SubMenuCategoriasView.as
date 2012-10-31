@@ -296,7 +296,14 @@ import com.greensock.TweenMax;
 					var contenedorAspectRatio:Number;
 					var instanciaAspectRatio:Number;
 
-					var elemento:Class = getDefinitionByName( _arrElementos[i][1]) as Class;
+                    var nombreClase:String;
+                    if(categoriaActual=='Pel' && _arrElementos[i][1]!='Nada_mc' || categoriaActual=='Boc' && _arrElementos[i][1]!='Nada_mc' ){
+                        nombreClase=_arrElementos[i][1]+'_sub';
+                    }else{
+                        nombreClase=_arrElementos[i][1];
+                    }
+
+					var elemento:Class = getDefinitionByName(nombreClase) as Class;
 					var instancia:*= new elemento();
 
 					var contenedorWidth:uint=43;
@@ -322,13 +329,12 @@ import com.greensock.TweenMax;
 					}
 					
 					instancia.alpha = 0;
-					instancia.width = 0.1;
-					instancia.height = 0.1;
+
 					if(contenedor){
 						contenedor.contenedorPaElemento_mc.addChild(instancia);
 						contenedor.celditaRopa_mc.gotoAndStop('out');
 					}
-					TweenMax.to(instancia, 0.7, {alpha:1, width:instanciaWidth, height:instanciaHeight, ease:Expo.easeOut, delay:0.1*numCont});
+                    TweenMax.to(instancia, 1, {alpha:1, ease:Expo.easeOut, delay:0.1*numCont});
 					instancia.id=_arrElementos[i][0];
 					instancia.name=_arrElementos[i][1];
 					Debug.trace('instancia.name es: '+instancia.name);

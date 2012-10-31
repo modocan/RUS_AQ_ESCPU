@@ -8,7 +8,6 @@
 package commands {
 import org.robotlegs.mvcs.Command;
 
-import starling.utils.formatString;
 
 import views.InterfazView;
 

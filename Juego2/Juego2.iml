@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Juego2">
+    <configurations>
+      <configuration name="Juego2" pure-as="true" main-class="Juego2" output-file="juego2.swf" output-folder="$MODULE_DIR$/../bin-debug/juegos">
+        <dependencies target-player="10.2">
+          <entries>
+            <entry library-id="a50faebb-450d-4306-b368-66c32e9bb61e">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="01a4135e-9b62-469d-bae3-385d66009436">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="9b884c30-c408-4aab-a331-2443a8b98a01">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="5e65a16a-3242-4113-a2ae-9275bdffcc20">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="82e3b51d-1c9e-4388-b2cd-ce9606777c0d">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="4520d910-0395-46ab-9feb-f2f05119c482">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="libs" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.5.1" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.keep-generated-actionscript" value="true" />
+          </map>
+          <option name="additionalOptions" value="-include-libraries libs/elementosPersonajes.swc" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.5.1" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="a50faebb-450d-4306-b368-66c32e9bb61e" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../../../../../repositorio" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="01a4135e-9b62-469d-bae3-385d66009436" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../../../../../../repositorio" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../../repositorio" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="9b884c30-c408-4aab-a331-2443a8b98a01" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="5e65a16a-3242-4113-a2ae-9275bdffcc20" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/../libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="82e3b51d-1c9e-4388-b2cd-ce9606777c0d" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="4520d910-0395-46ab-9feb-f2f05119c482" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/src" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="libs" level="application" />
+  </component>
+</module>
+

@@ -5,16 +5,16 @@
       <configuration name="EscuelaPueblo" pure-as="true" main-class="Main" output-file="EscuelaPueblo.swf" output-folder="$MODULE_DIR$/bin-debug" wrapper-template-path="$MODULE_DIR$/html-template">
         <dependencies target-player="10.2">
           <entries>
-            <entry library-name="AS3" library-level="application">
+            <entry library-id="a8cd503a-1dc3-494d-bd15-973a258d1ef2">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="libs" library-level="application">
+            <entry library-id="5a94f071-28dd-4cd9-803a-87ec0a553f00">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="531edaca-d2fb-4e9c-a2eb-a90d0a14d9ae">
+            <entry library-id="3e162cb7-ee76-4cd1-97b7-5d23a1807342">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-id="29b2e62f-426a-42f1-abab-5795e9e6e091">
+            <entry library-name="repositorio" library-level="application">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -36,23 +36,22 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3">
-      <sourceFolder url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../../../repositorio">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../../repositorio" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="4.5.1" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="events" level="project" />
     <orderEntry type="library" name="AS3" level="project" />
     <orderEntry type="library" name="AS3" level="application" />
-    <orderEntry type="library" name="libs" level="application" />
     <orderEntry type="module-library">
       <library type="flex">
-        <properties id="531edaca-d2fb-4e9c-a2eb-a90d0a14d9ae" />
+        <properties id="a8cd503a-1dc3-494d-bd15-973a258d1ef2" />
         <CLASSES>
-          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+          <root url="file://$MODULE_DIR$/../../../../../../../repositorio" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -60,15 +59,27 @@
     </orderEntry>
     <orderEntry type="module-library">
       <library type="flex">
-        <properties id="29b2e62f-426a-42f1-abab-5795e9e6e091" />
+        <properties id="5a94f071-28dd-4cd9-803a-87ec0a553f00" />
         <CLASSES>
-          <root url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" />
+          <root url="file://$MODULE_DIR$/../../../../../../../repositorio" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Documents/_REPOSITORIO/AS3" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../../../../../repositorio" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library type="flex">
+        <properties id="3e162cb7-ee76-4cd1-97b7-5d23a1807342" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="repositorio" level="application" />
   </component>
 </module>
 
